@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MessageViewController" customModule="PS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POp-xL-ua6" customClass="DesignableView" customModule="PS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="358.5" width="375" height="308.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientTopColor">
+                                        <color key="value" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientBottomColor">
+                                        <color key="value" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niG-Wr-XPA" customClass="DesignableView" customModule="PS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="308.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientTopColor">
+                                        <color key="value" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientBottomColor">
+                                        <color key="value" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-YJ-hb3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="niG-Wr-XPA" secondAttribute="trailing" id="3IX-Qf-2cV"/>
+                            <constraint firstItem="i6b-YJ-hb3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A6V-4g-qFW"/>
+                            <constraint firstItem="niG-Wr-XPA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A8j-OG-Ywk"/>
+                            <constraint firstItem="niG-Wr-XPA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BgQ-vc-0Js"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="POp-xL-ua6" secondAttribute="bottom" id="D2G-LX-p7m"/>
+                            <constraint firstAttribute="trailing" secondItem="POp-xL-ua6" secondAttribute="trailing" id="EhP-Dd-0Pb"/>
+                            <constraint firstItem="POp-xL-ua6" firstAttribute="top" secondItem="niG-Wr-XPA" secondAttribute="bottom" constant="50" id="KH5-Gg-xlg"/>
+                            <constraint firstItem="POp-xL-ua6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MVc-34-Vix"/>
+                            <constraint firstItem="i6b-YJ-hb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XER-av-q8M"/>
+                            <constraint firstAttribute="trailing" secondItem="i6b-YJ-hb3" secondAttribute="trailing" id="c50-2a-ZDB"/>
+                            <constraint firstItem="POp-xL-ua6" firstAttribute="height" secondItem="niG-Wr-XPA" secondAttribute="height" id="m4v-t2-YG9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i6b-YJ-hb3" secondAttribute="bottom" id="zel-qr-BBe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomGradientView" destination="POp-xL-ua6" id="RaB-ZG-5FM"/>
+                        <outlet property="contentView" destination="i6b-YJ-hb3" id="YxB-0R-2Th"/>
+                        <outlet property="topGradientView" destination="niG-Wr-XPA" id="A0F-Ow-Yfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
