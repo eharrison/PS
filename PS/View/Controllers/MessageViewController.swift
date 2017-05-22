@@ -14,34 +14,34 @@ class MessageViewController: UIViewController {
     @IBOutlet weak var bottomGradientView: DesignableView!
     @IBOutlet weak var contentView: UIView!
     
+    var messages = [Message]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        prepareForAnimation()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        animateIn()
+        FirebaseHelper.messages({ (messages) in
+            self.messages = messages
+            self.nextMessage()
+        })
     }
     
     // MARK: - Animations
     
-    private func prepareForAnimation() {
-        
-    }
-    
-    private func animateIn() {
-        self.contentView.showMessageView(message: "Hello there!", shown:{
+    private func nextMessage() {
+        if let text = messages.first?.message {
+            messages.removeFirst()
             
-        }, hidden:{
-            self.animateIn()
-        })
+            self.contentView.showMessageView(message: text, shown:{
+                
+            }, hidden:{
+                self.nextMessage()
+            })
+        }
+        
     }
 
 }
