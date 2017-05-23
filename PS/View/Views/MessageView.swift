@@ -16,6 +16,8 @@ class MessageView: UIView {
     
     @IBOutlet weak var messageLabel: UILabel?
     @IBOutlet weak var inputTextField: UITextField?
+    @IBOutlet weak var option1Button: UIButton?
+    @IBOutlet weak var option2Button: UIButton?
     
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
@@ -31,8 +33,10 @@ class MessageView: UIView {
             return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![0] as? MessageView
         case .input:
             return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![1] as? MessageView
-        default:
-            return nil
+        case .action:
+            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![2] as? MessageView
+        case .options:
+            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![3] as? MessageView
         }
     }
     
@@ -50,6 +54,11 @@ extension MessageView {
         
         self.inputTextField?.placeholder = message?.message
         self.inputTextField?.becomeFirstResponder()
+        
+        self.option1Button?.setTitle(message?.action1, for: .normal)
+        self.option2Button?.setTitle(message?.action2, for: .normal)
+        
+        //----------
         
         self.frame.origin.y = superview?.frame.size.height ?? UIScreen.main.bounds.size.height
         self.isHidden = false
@@ -108,13 +117,43 @@ extension MessageView: UITextFieldDelegate {
             return false
         }
         
-        message?.answer = textField.text
+        self.message?.answer = textField.text
+        if let message = message {
+            FirebaseHelper.save(message: message)
+        }
         
         inputTextField?.resignFirstResponder()
         
         return false
     }
     
+}
+
+// MARK: - Option Actions
+
+extension MessageView {
+    
+    @IBAction func option1Pressed(_ sender: UIButton) {
+        sender.animateTouchDown(halfWay: {
+            self.message?.answer = self.message?.action1
+            if let message = self.message {
+                FirebaseHelper.save(message: message)
+            }
+            
+            self.hide()
+        })
+    }
+    
+    @IBAction func option2Pressed(_ sender: UIButton) {
+        sender.animateTouchDown(halfWay: {
+            self.message?.answer = self.message?.action2
+            if let message = self.message {
+                FirebaseHelper.save(message: message)
+            }
+            
+            self.hide()
+        })
+    }
 }
 
 // MARK: - UIView Extensions

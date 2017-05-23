@@ -40,7 +40,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2c-9k-2N6">
-                    <rect key="frame" x="20" y="21" width="335" height="30"/>
+                    <rect key="frame" x="20" y="12" width="335" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="oHF-mv-0t6"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
@@ -57,6 +60,110 @@
                 <outlet property="inputTextField" destination="L2c-9k-2N6" id="bBe-WT-xK6"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="-67.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="awr-Ft-7Xl" customClass="MessageView" customModule="PS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCw-6y-ejU" customClass="DesignableButton" customModule="PS" customModuleProvider="target">
+                    <rect key="frame" x="20" y="77" width="335" height="49"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="8sN-gs-qh5"/>
+                    </constraints>
+                    <state key="normal" title="Option 1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="option1Pressed:" destination="awr-Ft-7Xl" eventType="touchUpInside" id="ZsB-ah-pR8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Howdy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3s-yI-Jgr">
+                    <rect key="frame" x="20" y="25.5" width="335" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q3s-yI-Jgr" secondAttribute="trailing" constant="20" id="KH2-p6-erI"/>
+                <constraint firstItem="Q3s-yI-Jgr" firstAttribute="leading" secondItem="awr-Ft-7Xl" secondAttribute="leading" constant="20" id="Mbm-s0-l0K"/>
+                <constraint firstItem="oCw-6y-ejU" firstAttribute="top" secondItem="Q3s-yI-Jgr" secondAttribute="bottom" constant="20" id="geQ-WO-Vui"/>
+                <constraint firstAttribute="trailing" secondItem="oCw-6y-ejU" secondAttribute="trailing" constant="20" id="o3R-1Y-Y4L"/>
+                <constraint firstItem="oCw-6y-ejU" firstAttribute="leading" secondItem="awr-Ft-7Xl" secondAttribute="leading" constant="20" id="pgD-s9-gVu"/>
+                <constraint firstItem="Q3s-yI-Jgr" firstAttribute="centerY" secondItem="awr-Ft-7Xl" secondAttribute="centerY" constant="-30" id="tGM-ai-kg5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageLabel" destination="Q3s-yI-Jgr" id="Lfr-sW-RtY"/>
+                <outlet property="option1Button" destination="oCw-6y-ejU" id="9tg-D8-2Gk"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="112"/>
+        </view>
+        <view contentMode="scaleToFill" id="1UQ-Gx-AnU" customClass="MessageView" customModule="PS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-Ru-s7H" customClass="DesignableButton" customModule="PS" customModuleProvider="target">
+                    <rect key="frame" x="197.5" y="76.5" width="157.5" height="49"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="8hv-M6-P1R"/>
+                    </constraints>
+                    <state key="normal" title="Option 2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="option2Pressed:" destination="1UQ-Gx-AnU" eventType="touchUpInside" id="uVf-hO-TNm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Howdy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3if-dC-StC">
+                    <rect key="frame" x="20" y="24.5" width="335" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-Em-m3H" customClass="DesignableButton" customModule="PS" customModuleProvider="target">
+                    <rect key="frame" x="20" y="76.5" width="157.5" height="49"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Option 1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="option1Pressed:" destination="1UQ-Gx-AnU" eventType="touchUpInside" id="Jzf-dw-XRL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mfj-Ru-s7H" firstAttribute="width" secondItem="6HF-Em-m3H" secondAttribute="width" id="4gU-VV-LIa"/>
+                <constraint firstAttribute="trailing" secondItem="mfj-Ru-s7H" secondAttribute="trailing" constant="20" id="8h3-qs-52G"/>
+                <constraint firstItem="6HF-Em-m3H" firstAttribute="centerY" secondItem="mfj-Ru-s7H" secondAttribute="centerY" id="Ded-7q-ypU"/>
+                <constraint firstItem="mfj-Ru-s7H" firstAttribute="top" secondItem="3if-dC-StC" secondAttribute="bottom" constant="20" id="HnF-4L-ExV"/>
+                <constraint firstAttribute="trailing" secondItem="3if-dC-StC" secondAttribute="trailing" constant="20" id="KTd-gJ-GpZ"/>
+                <constraint firstItem="mfj-Ru-s7H" firstAttribute="leading" secondItem="6HF-Em-m3H" secondAttribute="trailing" constant="20" id="OEt-vC-cYl"/>
+                <constraint firstItem="6HF-Em-m3H" firstAttribute="leading" secondItem="1UQ-Gx-AnU" secondAttribute="leading" constant="20" id="SOO-aY-Har"/>
+                <constraint firstItem="3if-dC-StC" firstAttribute="leading" secondItem="1UQ-Gx-AnU" secondAttribute="leading" constant="20" id="XRR-If-cFu"/>
+                <constraint firstItem="6HF-Em-m3H" firstAttribute="height" secondItem="mfj-Ru-s7H" secondAttribute="height" id="exI-7E-tNs"/>
+                <constraint firstItem="3if-dC-StC" firstAttribute="centerY" secondItem="1UQ-Gx-AnU" secondAttribute="centerY" constant="-30" id="i3b-B7-VX8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageLabel" destination="3if-dC-StC" id="O9f-qu-VAS"/>
+                <outlet property="option1Button" destination="6HF-Em-m3H" id="hza-8A-QRz"/>
+                <outlet property="option2Button" destination="mfj-Ru-s7H" id="yPA-5Z-AXl"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="321.5"/>
         </view>
     </objects>
 </document>

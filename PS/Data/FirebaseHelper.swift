@@ -50,6 +50,16 @@ class FirebaseHelper: NSObject {
                                 date: "2017-05-17 11:00",
                                 timeout: 2))
         
+        messages.append(Message(type: .action,
+                                date: "2017-05-17 11:00",
+                                action1: "Click here!!"))
+        
+        messages.append(Message(type: .options,
+                                message: "Choose!!",
+                                date: "2017-05-17 11:00",
+                                action1: "Yes",
+                                action2: "No"))
+        
         
         // Populate database
         var count = 0
@@ -91,6 +101,14 @@ class FirebaseHelper: NSObject {
             dictionary[firKey(.answer)] = answer
         }
         
+        if let action1 = message.action1 {
+            dictionary[firKey(.action1)] = action1
+        }
+        
+        if let action2 = message.action2 {
+            dictionary[firKey(.action2)] = action2
+        }
+        
         let database = FIRDatabase.database().reference()
         database.child(firKey(.messages)).child("\(id)").updateChildValues(dictionary)
     }
@@ -119,6 +137,9 @@ class FirebaseHelper: NSObject {
                             messageObj.waitTime = doubleValue(messageSnapshot, key: .waitTime)
                             messageObj.answer = stringValue(messageSnapshot, key: .answer)
                             messageObj.needAnswer = boolValue(messageSnapshot, key: .needAnswer)
+                            messageObj.action = firActionValue(messageSnapshot, key: .action)
+                            messageObj.action1 = stringValue(messageSnapshot, key: .action1)
+                            messageObj.action2 = stringValue(messageSnapshot, key: .action2)
                             
                             messages.append(messageObj)
                         }
@@ -167,6 +188,14 @@ extension FirebaseHelper {
         return .message
     }
     
+    static func firActionValue(_ from: FIRDataSnapshot, key: FirebaseKey) -> FirebaseKeyAction {
+        if let value = from.childSnapshot(forPath: firKey(key)).value as? String {
+            return FirebaseKeyAction(rawValue: value) ?? .none
+        }
+        
+        return .none
+    }
+    
 }
 
 // MARK: - Enumerators
@@ -200,9 +229,8 @@ enum FirebaseKey: String {
     
     case action = "action"
     case actionType = "actionType"
-    
-    case options = "options"
-    case option = "option"
+    case action1 = "action1"
+    case action2 = "action2"
 }
 
 enum FirebaseKeyType: String {
@@ -230,8 +258,10 @@ struct Message {
     var needAnswer: Bool = false
     var timeout: Double = 0
     var waitTime: Double = 0
+    var action1: String?
+    var action2: String?
     
-    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0) {
+    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0, action1: String? = nil, action2: String? = nil) {
         self.id = id
         self.message = message
         self.type = type
@@ -243,5 +273,7 @@ struct Message {
         self.waitTime = waitTime
         self.answer = answer
         self.needAnswer = needAnswer
+        self.action1 = action1
+        self.action2 = action2
     }
 }

@@ -21,8 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-YJ-hb3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POp-xL-ua6" customClass="DesignableView" customModule="PS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="358.5" width="375" height="308.5"/>
+                                <rect key="frame" x="0.0" y="433.5" width="375" height="233.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientTopColor">
@@ -34,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niG-Wr-XPA" customClass="DesignableView" customModule="PS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="308.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="233.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="gradientTopColor">
@@ -45,10 +49,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-YJ-hb3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1647058824" green="0.54901960780000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -58,7 +58,7 @@
                             <constraint firstItem="niG-Wr-XPA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BgQ-vc-0Js"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="POp-xL-ua6" secondAttribute="bottom" id="D2G-LX-p7m"/>
                             <constraint firstAttribute="trailing" secondItem="POp-xL-ua6" secondAttribute="trailing" id="EhP-Dd-0Pb"/>
-                            <constraint firstItem="POp-xL-ua6" firstAttribute="top" secondItem="niG-Wr-XPA" secondAttribute="bottom" constant="50" id="KH5-Gg-xlg"/>
+                            <constraint firstItem="POp-xL-ua6" firstAttribute="top" secondItem="niG-Wr-XPA" secondAttribute="bottom" constant="200" id="KH5-Gg-xlg"/>
                             <constraint firstItem="POp-xL-ua6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MVc-34-Vix"/>
                             <constraint firstItem="i6b-YJ-hb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XER-av-q8M"/>
                             <constraint firstAttribute="trailing" secondItem="i6b-YJ-hb3" secondAttribute="trailing" id="c50-2a-ZDB"/>
