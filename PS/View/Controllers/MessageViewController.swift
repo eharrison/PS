@@ -14,6 +14,7 @@ class MessageViewController: UIViewController {
     @IBOutlet weak var bottomGradientView: DesignableView!
     @IBOutlet weak var contentView: UIView!
     
+    var startedAnimation = false
     var messages = [Message]()
     
     override func viewDidLoad() {
@@ -24,19 +25,32 @@ class MessageViewController: UIViewController {
         super.viewDidAppear(animated)
         
         FirebaseHelper.messages({ (messages) in
-            self.messages = messages
-            self.nextMessage()
+            if !self.startedAnimation {
+                self.messages = messages
+                self.nextMessage()
+                self.startedAnimation = true
+            }
         })
     }
     
     // MARK: - Animations
     
     private func nextMessage() {
-        if let message = messages.first {
+        if var message = messages.first {
             messages.removeFirst()
             
+            //doesn't show if it's already read
+            guard !message.read else{
+                print("Message '\(message.message ?? "")' read at \(message.readAt ?? "")")
+                
+                self.nextMessage()
+                return
+            }
+            
             self.contentView.showMessageView(message: message, shown:{
-                //finished showing
+                message.read = true
+                message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
+                FirebaseHelper.save(message: message)
             }, hidden:{
                 self.nextMessage()
             })
