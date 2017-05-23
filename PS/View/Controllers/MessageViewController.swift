@@ -37,16 +37,37 @@ class MessageViewController: UIViewController {
     
     private func nextMessage() {
         if let message = messages.first {
-            messages.removeFirst()
-            
             if message.canShow {
-                self.contentView.showMessageView(message: message, shown:{
+                messages.removeFirst()
+                
+                //date has arrived
+                if message.read {
+                    //already read, go to next message
+                    self.nextMessage()
+                }else{
+                    self.contentView.showMessageView(message: message, shown:{
+                        
+                    }, hidden:{
+                        self.nextMessage()
+                    })
+                }
+            }else{
+                //not time for message yet
+                
+                let date = message.date?.toDate(format: "yyyy-MM-dd HH:mm")
+                let dateString = date?.toString(format: "MMM dd - HH:mm") ?? ""
+                self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\n\nNext message will come at:\n\(dateString)"), shown:{
                     
                 }, hidden:{
-                    self.nextMessage()
+                    
                 })
-            }else{
-                self.nextMessage()
+                
+                if let date = date {
+                    Timer.scheduledTimer(withTimeInterval: date.timeIntervalSinceNow, repeats: false, block: { (timer) in
+                        self.contentView.hideMessageView()
+                        self.nextMessage()
+                    })
+                }
             }
         }
         

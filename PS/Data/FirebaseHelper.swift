@@ -22,7 +22,7 @@ class FirebaseHelper: NSObject {
         
         messages.append(Message(type: .message,
                                 message: "Hi there!",
-                                date: "2017-05-23 23:04",
+                                date: "2017-05-23 23:20",
                                 timeout: 2))
         
         messages.append(Message(type: .message,

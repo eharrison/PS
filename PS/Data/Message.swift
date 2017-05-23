@@ -28,11 +28,6 @@ struct Message {
             return true
         }
         
-        //doesn't show if it's already read
-        //        if read {
-        //            return false
-        //        }
-        
         return Date() >= date
     }
     
