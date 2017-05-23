@@ -40,17 +40,15 @@ class MessageViewController: UIViewController {
             messages.removeFirst()
             
             //doesn't show if it's already read
-            guard !message.read else{
+            /*guard !message.read else{
                 print("Message '\(message.message ?? "")' read at \(message.readAt ?? "")")
                 
                 self.nextMessage()
                 return
-            }
+            }*/
             
             self.contentView.showMessageView(message: message, shown:{
-                message.read = true
-                message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
-                FirebaseHelper.save(message: message)
+                
             }, hidden:{
                 self.nextMessage()
             })

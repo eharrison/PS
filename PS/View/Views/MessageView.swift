@@ -14,14 +14,26 @@ let outDuration: Double = 0.5
 
 class MessageView: UIView {
     
-    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel?
+    @IBOutlet weak var inputTextField: UITextField?
     
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
     var message: Message?
     
-    static func newInstance(type: FirebaseKeyType) -> MessageView{
-        return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![0] as! MessageView
+    var timeout: Double {
+        return self.message?.timeout ?? 0
+    }
+    
+    static func newInstance(type: FirebaseKeyType) -> MessageView?{
+        switch type {
+        case .message:
+            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![0] as? MessageView
+        case .input:
+            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![1] as? MessageView
+        default:
+            return nil
+        }
     }
     
     override func awakeFromNib() {
@@ -33,8 +45,11 @@ class MessageView: UIView {
 
 extension MessageView {
     
-    func show(autoHide: Bool) {
-        self.messageLabel.text = message?.message
+    func show() {
+        self.messageLabel?.text = message?.message
+        
+        self.inputTextField?.placeholder = message?.message
+        self.inputTextField?.becomeFirstResponder()
         
         self.frame.origin.y = superview?.frame.size.height ?? UIScreen.main.bounds.size.height
         self.isHidden = false
@@ -44,11 +59,12 @@ extension MessageView {
             self.alpha = 1
             self.frame.origin.y = 0
         }) { (completed) in
-            if autoHide {
-                Timer.scheduledTimer(timeInterval: readDuration, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
+            if self.timeout > 0 {
+                Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
             }
             
             self.shownCallback?()
+            self.updateMessageRead()
         }
     }
     
@@ -62,29 +78,67 @@ extension MessageView {
     }
     
     @IBAction func hideAfterDelay(_ timer: Timer) {
+        inputTextField?.resignFirstResponder()
+        
         hide()
     }
 }
 
+// MARK: - Database
+
+extension MessageView {
+    
+    func updateMessageRead(){
+        guard var message = message else {
+            return
+        }
+        
+        message.read = true
+        message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
+        FirebaseHelper.save(message: message)
+    }
+}
+
+// MARK: - TextField Delegate
+
+extension MessageView: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard message?.needAnswer ?? false else {
+            return false
+        }
+        
+        message?.answer = textField.text
+        
+        inputTextField?.resignFirstResponder()
+        
+        return false
+    }
+    
+}
+
+// MARK: - UIView Extensions
+
 extension UIView {
     
-    func startLoadingAnimationDelayed(_ delay: Double, message: Message, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
+    func startLoadingAnimationDelayed(_ delay: Double, message: Message, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
         let delayTime = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
         DispatchQueue.main.asyncAfter(deadline: delayTime) {
-            self.showMessageView(message: message, autoHide: autoHide, shown: shown, hidden: hidden)
+            self.showMessageView(message: message, shown: shown, hidden: hidden)
         }
     }
     
-    func showMessageView(message: Message, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
+    func showMessageView(message: Message, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
         //hideMessageView()
         
-        let messageView = MessageView.newInstance(type: message.type)
-        messageView.shownCallback = shown
-        messageView.hiddenCallback = hidden
-        messageView.message = message
-        messageView.frame = self.bounds
-        self.addSubview(messageView)
-        messageView.show(autoHide: autoHide)
+        if let messageView = MessageView.newInstance(type: message.type) {
+            messageView.shownCallback = shown
+            messageView.hiddenCallback = hidden
+            messageView.message = message
+            messageView.frame = self.bounds
+            self.addSubview(messageView)
+            messageView.show()
+        }
     }
     
     func hideMessageView(){

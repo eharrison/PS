@@ -16,33 +16,39 @@ class FirebaseHelper: NSObject {
     }
     
     /// Saves new messages
-    static func save(){
+    static func createDB(){
         
         var messages = [Message]()
         
         messages.append(Message(type: .message,
                                 message: "Hi there!",
-                                date: "2017-05-17 08:00"))
+                                date: "2017-05-17 08:00",
+                                timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "It's a great day!",
-                                date: "2017-05-17 09:00"))
+                                date: "2017-05-17 09:00",
+                                timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "It works!",
-                                date: "2017-05-17 10:00"))
+                                date: "2017-05-17 10:00",
+                                timeout: 2))
         
-        messages.append(Message(type: .message,
-                                message: "Amazing!",
-                                date: "2017-05-17 11:00"))
+        messages.append(Message(type: .input,
+                                message: "What's your name?",
+                                date: "2017-05-17 11:00",
+                                timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "Wooohooo!",
-                                date: "2017-05-17 11:00"))
+                                date: "2017-05-17 11:00",
+                                timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "hahah!",
-                                date: "2017-05-17 11:00"))
+                                date: "2017-05-17 11:00",
+                                timeout: 2))
         
         
         // Populate database
@@ -66,6 +72,7 @@ class FirebaseHelper: NSObject {
         dictionary[firKey(.timeout)] = message.timeout
         dictionary[firKey(.waitTime)] = message.waitTime
         dictionary[firKey(.action)] = message.action.rawValue
+        dictionary[firKey(.needAnswer)] = message.needAnswer
         
         if let message = message.message {
             dictionary[firKey(.message)] = message
@@ -78,6 +85,10 @@ class FirebaseHelper: NSObject {
         if let readAt = message.readAt {
             dictionary[firKey(.read)] = message.read
             dictionary[firKey(.readAt)] = readAt
+        }
+        
+        if let answer = message.answer {
+            dictionary[firKey(.answer)] = answer
         }
         
         let database = FIRDatabase.database().reference()
@@ -106,6 +117,8 @@ class FirebaseHelper: NSObject {
                             messageObj.readAt = stringValue(messageSnapshot, key: .readAt)
                             messageObj.timeout = doubleValue(messageSnapshot, key: .timeout)
                             messageObj.waitTime = doubleValue(messageSnapshot, key: .waitTime)
+                            messageObj.answer = stringValue(messageSnapshot, key: .answer)
+                            messageObj.needAnswer = boolValue(messageSnapshot, key: .needAnswer)
                             
                             messages.append(messageObj)
                         }
@@ -181,6 +194,7 @@ enum FirebaseKey: String {
     case read = "read"
     case readAt = "readAt"
     case answer = "answer"
+    case needAnswer = "needAnswer"
     case timeout = "timeout"
     case waitTime = "waitTime"
     
@@ -212,10 +226,12 @@ struct Message {
     var date: String?
     var read: Bool = false
     var readAt: String?
+    var answer: String?
+    var needAnswer: Bool = false
     var timeout: Double = 0
     var waitTime: Double = 0
     
-    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, timeout: Double = 0, waitTime: Double = 0) {
+    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0) {
         self.id = id
         self.message = message
         self.type = type
@@ -225,5 +241,7 @@ struct Message {
         self.readAt = readAt
         self.timeout = timeout
         self.waitTime = waitTime
+        self.answer = answer
+        self.needAnswer = needAnswer
     }
 }
