@@ -22,17 +22,17 @@ class FirebaseHelper: NSObject {
         
         messages.append(Message(type: .message,
                                 message: "Hi there!",
-                                date: "2017-05-17 08:00",
+                                date: "2017-05-23 23:04",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "It's a great day!",
-                                date: "2017-05-17 09:00",
+                                date: "2017-05-23 09:00",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "It works!",
-                                date: "2017-05-17 10:00",
+                                date: "2017-05-24 10:00",
                                 timeout: 2))
         
         messages.append(Message(type: .input,
@@ -242,38 +242,4 @@ enum FirebaseKeyType: String {
 
 enum FirebaseKeyAction: String {
     case none = "none"
-}
-
-// MARK: - Objects
-
-struct Message {
-    var message: String?
-    var id: String?
-    var type: FirebaseKeyType = .message
-    var action: FirebaseKeyAction = .none
-    var date: String?
-    var read: Bool = false
-    var readAt: String?
-    var answer: String?
-    var needAnswer: Bool = false
-    var timeout: Double = 0
-    var waitTime: Double = 0
-    var action1: String?
-    var action2: String?
-    
-    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0, action1: String? = nil, action2: String? = nil) {
-        self.id = id
-        self.message = message
-        self.type = type
-        self.action = action
-        self.date = date
-        self.read = read
-        self.readAt = readAt
-        self.timeout = timeout
-        self.waitTime = waitTime
-        self.answer = answer
-        self.needAnswer = needAnswer
-        self.action1 = action1
-        self.action2 = action2
-    }
 }

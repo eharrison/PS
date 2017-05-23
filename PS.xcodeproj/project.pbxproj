@@ -38,6 +38,7 @@
 		0ACF0A581ED3AA6800EF1609 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A501ED3AA6800EF1609 /* UIImageViewExtension.swift */; };
 		0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */; };
 		0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */; };
+		0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A5C1ED4849D00EF1609 /* Message.swift */; };
 		733379F3358EB03083E9DD0C /* Pods_PS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87402482B0CD08F44B1C3E69 /* Pods_PS.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		0ACF0A501ED3AA6800EF1609 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextInput+Quests.swift"; sourceTree = "<group>"; };
 		0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
+		0ACF0A5C1ED4849D00EF1609 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		73164C272DC059303B5192C2 /* Pods-PS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.debug.xcconfig"; sourceTree = "<group>"; };
 		87402482B0CD08F44B1C3E69 /* Pods_PS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34D7690D1A0711E9E38CC0 /* Pods-PS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */,
+				0ACF0A5C1ED4849D00EF1609 /* Message.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				0ACF0A3E1ED312B700EF1609 /* UIViewExtensions.swift in Sources */,
 				0ACF0A361ED312B700EF1609 /* DesignableProgressView.swift in Sources */,
 				0ACF0A341ED312B700EF1609 /* DesignableLabel.swift in Sources */,
+				0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */,
 				0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */,
 				0ACF0A421ED314D100EF1609 /* MessageViewController.swift in Sources */,
 				0ACF0A321ED312B700EF1609 /* DesignableButton.swift in Sources */,

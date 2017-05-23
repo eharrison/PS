@@ -36,22 +36,18 @@ class MessageViewController: UIViewController {
     // MARK: - Animations
     
     private func nextMessage() {
-        if var message = messages.first {
+        if let message = messages.first {
             messages.removeFirst()
             
-            //doesn't show if it's already read
-            /*guard !message.read else{
-                print("Message '\(message.message ?? "")' read at \(message.readAt ?? "")")
-                
+            if message.canShow {
+                self.contentView.showMessageView(message: message, shown:{
+                    
+                }, hidden:{
+                    self.nextMessage()
+                })
+            }else{
                 self.nextMessage()
-                return
-            }*/
-            
-            self.contentView.showMessageView(message: message, shown:{
-                
-            }, hidden:{
-                self.nextMessage()
-            })
+            }
         }
         
     }

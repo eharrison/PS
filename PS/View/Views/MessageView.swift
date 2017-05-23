@@ -28,16 +28,24 @@ class MessageView: UIView {
     }
     
     static func newInstance(type: FirebaseKeyType) -> MessageView?{
+        var index = 0
+        
         switch type {
         case .message:
-            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![0] as? MessageView
+            index = 0
+            break
         case .input:
-            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![1] as? MessageView
+            index = 1
+            break
         case .action:
-            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![2] as? MessageView
+            index = 2
+            break
         case .options:
-            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![3] as? MessageView
+            index = 3
+            break
         }
+        
+        return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![index] as? MessageView
     }
     
     override func awakeFromNib() {
