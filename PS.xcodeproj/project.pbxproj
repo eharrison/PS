@@ -31,6 +31,13 @@
 		0ACF0A461ED3182B00EF1609 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A451ED3182B00EF1609 /* MessageView.xib */; };
 		0ACF0A481ED3252800EF1609 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A471ED3252800EF1609 /* GoogleService-Info.plist */; };
 		0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */; };
+		0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */; };
+		0ACF0A551ED3AA6800EF1609 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A4D1ED3AA6800EF1609 /* NumberExtensions.swift */; };
+		0ACF0A561ED3AA6800EF1609 /* String+Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A4E1ED3AA6800EF1609 /* String+Quests.swift */; };
+		0ACF0A571ED3AA6800EF1609 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A4F1ED3AA6800EF1609 /* StringExtensions.swift */; };
+		0ACF0A581ED3AA6800EF1609 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A501ED3AA6800EF1609 /* UIImageViewExtension.swift */; };
+		0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */; };
+		0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */; };
 		733379F3358EB03083E9DD0C /* Pods_PS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87402482B0CD08F44B1C3E69 /* Pods_PS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,13 @@
 		0ACF0A451ED3182B00EF1609 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		0ACF0A471ED3252800EF1609 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		0ACF0A4D1ED3AA6800EF1609 /* NumberExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtensions.swift; sourceTree = "<group>"; };
+		0ACF0A4E1ED3AA6800EF1609 /* String+Quests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Quests.swift"; sourceTree = "<group>"; };
+		0ACF0A4F1ED3AA6800EF1609 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		0ACF0A501ED3AA6800EF1609 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextInput+Quests.swift"; sourceTree = "<group>"; };
+		0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
 		73164C272DC059303B5192C2 /* Pods-PS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.debug.xcconfig"; sourceTree = "<group>"; };
 		87402482B0CD08F44B1C3E69 /* Pods_PS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34D7690D1A0711E9E38CC0 /* Pods-PS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +144,7 @@
 		0ACF0A0F1ED3108800EF1609 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				0ACF0A4B1ED3AA6800EF1609 /* Extensions */,
 				0ACF0A201ED312B700EF1609 /* UIHacks */,
 			);
 			path = Library;
@@ -229,6 +244,20 @@
 				0ACF0A2D1ED312B700EF1609 /* UIViewAnimations.swift */,
 				0ACF0A2E1ED312B700EF1609 /* UIViewControllerExtensions.swift */,
 				0ACF0A2F1ED312B700EF1609 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0ACF0A4B1ED3AA6800EF1609 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */,
+				0ACF0A4D1ED3AA6800EF1609 /* NumberExtensions.swift */,
+				0ACF0A4E1ED3AA6800EF1609 /* String+Quests.swift */,
+				0ACF0A4F1ED3AA6800EF1609 /* StringExtensions.swift */,
+				0ACF0A501ED3AA6800EF1609 /* UIImageViewExtension.swift */,
+				0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */,
+				0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,20 +406,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACF0A351ED312B700EF1609 /* DesignableNavigationBar.swift in Sources */,
+				0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */,
 				0ACF0A381ED312B700EF1609 /* DesignableTextView.swift in Sources */,
+				0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */,
 				0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */,
 				0ACF0A401ED312B700EF1609 /* QuestContentTextView.swift in Sources */,
 				0ACF0A3F1ED312B700EF1609 /* ParallaxHeaderView.swift in Sources */,
 				0ACF09FB1ED3103D00EF1609 /* AppDelegate.swift in Sources */,
 				0ACF0A3D1ED312B700EF1609 /* UIViewControllerExtensions.swift in Sources */,
 				0ACF0A3A1ED312B700EF1609 /* NSNumberExtensions.swift in Sources */,
+				0ACF0A561ED3AA6800EF1609 /* String+Quests.swift in Sources */,
 				0ACF0A331ED312B700EF1609 /* DesignableImageView.swift in Sources */,
 				0ACF0A3C1ED312B700EF1609 /* UIViewAnimations.swift in Sources */,
+				0ACF0A571ED3AA6800EF1609 /* StringExtensions.swift in Sources */,
 				0ACF0A371ED312B700EF1609 /* DesignableTextField.swift in Sources */,
+				0ACF0A581ED3AA6800EF1609 /* UIImageViewExtension.swift in Sources */,
 				0ACF0A441ED3170400EF1609 /* MessageView.swift in Sources */,
+				0ACF0A551ED3AA6800EF1609 /* NumberExtensions.swift in Sources */,
 				0ACF0A3E1ED312B700EF1609 /* UIViewExtensions.swift in Sources */,
 				0ACF0A361ED312B700EF1609 /* DesignableProgressView.swift in Sources */,
 				0ACF0A341ED312B700EF1609 /* DesignableLabel.swift in Sources */,
+				0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */,
 				0ACF0A421ED314D100EF1609 /* MessageViewController.swift in Sources */,
 				0ACF0A321ED312B700EF1609 /* DesignableButton.swift in Sources */,
 				0ACF0A3B1ED312B700EF1609 /* UIBezierPath+Polygon.swift in Sources */,

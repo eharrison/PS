@@ -18,9 +18,9 @@ class MessageView: UIView {
     
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
-    var message = ""
+    var message: Message?
     
-    static func newInstance() -> MessageView{
+    static func newInstance(type: FirebaseKeyType) -> MessageView{
         return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![0] as! MessageView
     }
     
@@ -34,7 +34,7 @@ class MessageView: UIView {
 extension MessageView {
     
     func show(autoHide: Bool) {
-        self.messageLabel.text = message
+        self.messageLabel.text = message?.message
         
         self.frame.origin.y = superview?.frame.size.height ?? UIScreen.main.bounds.size.height
         self.isHidden = false
@@ -68,17 +68,17 @@ extension MessageView {
 
 extension UIView {
     
-    func startLoadingAnimationDelayed(_ delay: Double, message: String, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
+    func startLoadingAnimationDelayed(_ delay: Double, message: Message, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
         let delayTime = DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
         DispatchQueue.main.asyncAfter(deadline: delayTime) {
             self.showMessageView(message: message, autoHide: autoHide, shown: shown, hidden: hidden)
         }
     }
     
-    func showMessageView(message: String, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
+    func showMessageView(message: Message, autoHide: Bool = true, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
         //hideMessageView()
         
-        let messageView = MessageView.newInstance()
+        let messageView = MessageView.newInstance(type: message.type)
         messageView.shownCallback = shown
         messageView.hiddenCallback = hidden
         messageView.message = message

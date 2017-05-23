@@ -32,11 +32,11 @@ class MessageViewController: UIViewController {
     // MARK: - Animations
     
     private func nextMessage() {
-        if let text = messages.first?.message {
+        if let message = messages.first {
             messages.removeFirst()
             
-            self.contentView.showMessageView(message: text, shown:{
-                
+            self.contentView.showMessageView(message: message, shown:{
+                //finished showing
             }, hidden:{
                 self.nextMessage()
             })
