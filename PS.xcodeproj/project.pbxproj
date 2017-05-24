@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1CFFD91ED4FCB4009D9FD3 /* MVFeedbackHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CFFD81ED4FCB4009D9FD3 /* MVFeedbackHelper.swift */; };
+		0A1CFFDB1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CFFDA1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift */; };
+		0A1CFFDD1ED50348009D9FD3 /* FirebaseHelper+CreateDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CFFDC1ED50348009D9FD3 /* FirebaseHelper+CreateDB.swift */; };
+		0A1CFFDF1ED505BD009D9FD3 /* Alerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1CFFDE1ED505BD009D9FD3 /* Alerts.storyboard */; };
+		0A1CFFE11ED5070C009D9FD3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CFFE01ED5070C009D9FD3 /* AlertViewController.swift */; };
 		0ACF09FB1ED3103D00EF1609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF09FA1ED3103D00EF1609 /* AppDelegate.swift */; };
 		0ACF0A171ED3108800EF1609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A0D1ED3108800EF1609 /* Assets.xcassets */; };
 		0ACF0A181ED3108800EF1609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A111ED3108800EF1609 /* LaunchScreen.storyboard */; };
@@ -43,6 +48,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1CFFD81ED4FCB4009D9FD3 /* MVFeedbackHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackHelper.swift; sourceTree = "<group>"; };
+		0A1CFFDA1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVLocalNotificationsHelper.swift; sourceTree = "<group>"; };
+		0A1CFFDC1ED50348009D9FD3 /* FirebaseHelper+CreateDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FirebaseHelper+CreateDB.swift"; sourceTree = "<group>"; };
+		0A1CFFDE1ED505BD009D9FD3 /* Alerts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alerts.storyboard; sourceTree = "<group>"; };
+		0A1CFFE01ED5070C009D9FD3 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		0ACF09F71ED3103D00EF1609 /* PS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACF09FA1ED3103D00EF1609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACF0A061ED3103D00EF1609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */,
+				0A1CFFDC1ED50348009D9FD3 /* FirebaseHelper+CreateDB.swift */,
 				0ACF0A5C1ED4849D00EF1609 /* Message.swift */,
 			);
 			path = Data;
@@ -147,6 +158,8 @@
 		0ACF0A0F1ED3108800EF1609 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				0A1CFFDA1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift */,
+				0A1CFFD81ED4FCB4009D9FD3 /* MVFeedbackHelper.swift */,
 				0ACF0A4B1ED3AA6800EF1609 /* Extensions */,
 				0ACF0A201ED312B700EF1609 /* UIHacks */,
 			);
@@ -158,6 +171,7 @@
 			children = (
 				0ACF0A111ED3108800EF1609 /* LaunchScreen.storyboard */,
 				0ACF0A131ED3108800EF1609 /* Main.storyboard */,
+				0A1CFFDE1ED505BD009D9FD3 /* Alerts.storyboard */,
 			);
 			name = Storyboards;
 			path = Localizations;
@@ -193,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACF0A411ED314D100EF1609 /* MessageViewController.swift */,
+				0A1CFFE01ED5070C009D9FD3 /* AlertViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +365,7 @@
 				0ACF0A481ED3252800EF1609 /* GoogleService-Info.plist in Resources */,
 				0ACF0A171ED3108800EF1609 /* Assets.xcassets in Resources */,
 				0ACF0A181ED3108800EF1609 /* LaunchScreen.storyboard in Resources */,
+				0A1CFFDF1ED505BD009D9FD3 /* Alerts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +429,7 @@
 				0ACF0A381ED312B700EF1609 /* DesignableTextView.swift in Sources */,
 				0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */,
 				0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */,
+				0A1CFFDB1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift in Sources */,
 				0ACF0A401ED312B700EF1609 /* QuestContentTextView.swift in Sources */,
 				0ACF0A3F1ED312B700EF1609 /* ParallaxHeaderView.swift in Sources */,
 				0ACF09FB1ED3103D00EF1609 /* AppDelegate.swift in Sources */,
@@ -427,14 +444,17 @@
 				0ACF0A441ED3170400EF1609 /* MessageView.swift in Sources */,
 				0ACF0A551ED3AA6800EF1609 /* NumberExtensions.swift in Sources */,
 				0ACF0A3E1ED312B700EF1609 /* UIViewExtensions.swift in Sources */,
+				0A1CFFDD1ED50348009D9FD3 /* FirebaseHelper+CreateDB.swift in Sources */,
 				0ACF0A361ED312B700EF1609 /* DesignableProgressView.swift in Sources */,
 				0ACF0A341ED312B700EF1609 /* DesignableLabel.swift in Sources */,
+				0A1CFFD91ED4FCB4009D9FD3 /* MVFeedbackHelper.swift in Sources */,
 				0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */,
 				0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */,
 				0ACF0A421ED314D100EF1609 /* MessageViewController.swift in Sources */,
 				0ACF0A321ED312B700EF1609 /* DesignableButton.swift in Sources */,
 				0ACF0A3B1ED312B700EF1609 /* UIBezierPath+Polygon.swift in Sources */,
 				0ACF0A391ED312B700EF1609 /* DesignableView.swift in Sources */,
+				0A1CFFE11ED5070C009D9FD3 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S2DSCP4F3H;
 				INFOPLIST_FILE = PS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itsdayoff.PS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -577,7 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S2DSCP4F3H;
 				INFOPLIST_FILE = PS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itsdayoff.PS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

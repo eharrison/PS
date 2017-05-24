@@ -40,6 +40,9 @@ class MessageView: UIView {
         case .action:
             index = 2
             break
+        case .enablePush:
+            index = 2
+            break
         case .options:
             index = 3
             break
@@ -82,6 +85,7 @@ extension MessageView {
             
             self.shownCallback?()
             self.updateMessageRead()
+            self.successNotificationFeedback()
         }
     }
     
@@ -142,17 +146,27 @@ extension MessageView: UITextFieldDelegate {
 extension MessageView {
     
     @IBAction func option1Pressed(_ sender: UIButton) {
+        sender.selectionFeedback()
         sender.animateTouchDown(halfWay: {
-            self.message?.answer = self.message?.action1
-            if let message = self.message {
-                FirebaseHelper.save(message: message)
+            if self.message?.type == .enablePush {
+                AppDelegate.current?.window?.rootViewController?.showEnableNotificationsRequest({
+                    DispatchQueue.main.async {
+                        self.hide()
+                    }
+                })
+            }else {
+                self.message?.answer = self.message?.action1
+                if let message = self.message {
+                    FirebaseHelper.save(message: message)
+                }
+                
+                self.hide()
             }
-            
-            self.hide()
         })
     }
     
     @IBAction func option2Pressed(_ sender: UIButton) {
+        sender.selectionFeedback()
         sender.animateTouchDown(halfWay: {
             self.message?.answer = self.message?.action2
             if let message = self.message {

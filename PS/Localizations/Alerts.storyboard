@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Black.otf">
+            <string>Gilroy-Black</string>
+        </array>
+        <array key="Gilroy-Bold.otf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Medium.otf">
+            <string>Gilroy-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Alert View Controller-->
+        <scene sceneID="vAM-0w-eaE">
+            <objects>
+                <viewController storyboardIdentifier="AllowPushAlert" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="j4i-9r-N4v" customClass="AlertViewController" customModule="PS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vzr-mv-zNl"/>
+                        <viewControllerLayoutGuide type="bottom" id="qdS-Fd-OIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iug-J5-d8m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29D-1z-1YO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ynB-2U-Zh6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-3N-31W" customClass="DesignableView" customModule="PS" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="183" width="315" height="300.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulb-k2-pi7">
+                                                    <rect key="frame" x="20" y="144" width="275" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Cf4-2A-e39"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Black" family="Gilroy" pointSize="20"/>
+                                                    <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="titleLabel"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'll let you know when I have something else to tell you! 😉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-zK-dEO">
+                                                    <rect key="frame" x="20" y="175" width="275" height="33"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjc-15-uGs" customClass="DesignableButton" customModule="PS" customModuleProvider="target">
+                                                    <rect key="frame" x="167.5" y="230.5" width="127.5" height="50"/>
+                                                    <color key="backgroundColor" red="0.1529411765" green="0.56862745100000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Marks quest content as completed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="u5l-pE-pDG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="16"/>
+                                                    <state key="normal" title="Okay">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="disabled">
+                                                        <color key="titleColor" red="0.38431372549999998" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="okButtonPressed:" destination="j4i-9r-N4v" eventType="touchUpInside" id="imD-7U-vxb"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="879-2a-pDx" customClass="DesignableButton" customModule="PS" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="230.5" width="127.5" height="50"/>
+                                                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Marks quest content as completed"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="VZb-aY-uHd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="16"/>
+                                                    <state key="normal" title="Later">
+                                                        <color key="titleColor" red="0.38431372549999998" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <state key="disabled">
+                                                        <color key="titleColor" red="0.38431372549999998" green="0.40784313729999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="cancelButtonPressed:" destination="j4i-9r-N4v" eventType="touchUpInside" id="kGU-md-ZIe"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="72y-Y4-ZKG">
+                                                    <rect key="frame" x="45" y="26" width="225" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="2dy-5k-d3A"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ulb-k2-pi7" secondAttribute="trailing" constant="20" id="3Jm-oh-Hev"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ti6-zK-dEO" secondAttribute="trailing" constant="20" id="3KQ-5t-E8L"/>
+                                                <constraint firstItem="Ti6-zK-dEO" firstAttribute="leading" secondItem="VdT-3N-31W" secondAttribute="leading" constant="20" id="3Or-sD-GvP"/>
+                                                <constraint firstAttribute="bottom" secondItem="879-2a-pDx" secondAttribute="bottom" constant="20" id="61A-Bq-Wff"/>
+                                                <constraint firstItem="Kjc-15-uGs" firstAttribute="width" secondItem="879-2a-pDx" secondAttribute="width" id="6Wp-eN-FzI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kjc-15-uGs" secondAttribute="trailing" constant="20" id="8tJ-Iq-nUu"/>
+                                                <constraint firstItem="ulb-k2-pi7" firstAttribute="leading" secondItem="VdT-3N-31W" secondAttribute="leading" constant="20" id="EUp-tJ-mHu"/>
+                                                <constraint firstItem="879-2a-pDx" firstAttribute="top" secondItem="Ti6-zK-dEO" secondAttribute="bottom" constant="22.5" id="HSQ-bp-0Rk"/>
+                                                <constraint firstItem="72y-Y4-ZKG" firstAttribute="centerX" secondItem="VdT-3N-31W" secondAttribute="centerX" id="Hfa-Xt-ucg"/>
+                                                <constraint firstItem="ulb-k2-pi7" firstAttribute="top" secondItem="72y-Y4-ZKG" secondAttribute="bottom" constant="28" id="N77-Jq-Zsh"/>
+                                                <constraint firstAttribute="height" priority="500" constant="300" id="eZo-Xq-SvT"/>
+                                                <constraint firstAttribute="width" constant="315" id="gsP-RB-B0c"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kjc-15-uGs" secondAttribute="bottom" constant="20" id="rId-RX-lFl"/>
+                                                <constraint firstItem="879-2a-pDx" firstAttribute="leading" secondItem="VdT-3N-31W" secondAttribute="leading" constant="20" id="rOG-ye-LjL"/>
+                                                <constraint firstItem="Ti6-zK-dEO" firstAttribute="top" secondItem="ulb-k2-pi7" secondAttribute="bottom" constant="6" id="umA-30-Y6E"/>
+                                                <constraint firstItem="Kjc-15-uGs" firstAttribute="leading" secondItem="879-2a-pDx" secondAttribute="trailing" constant="20" id="vKu-Od-Tbq"/>
+                                                <constraint firstItem="72y-Y4-ZKG" firstAttribute="top" secondItem="VdT-3N-31W" secondAttribute="top" constant="26" id="zes-K7-ayw"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VdT-3N-31W" firstAttribute="centerX" secondItem="ynB-2U-Zh6" secondAttribute="centerX" id="K44-Of-x5m"/>
+                                        <constraint firstItem="VdT-3N-31W" firstAttribute="centerY" secondItem="ynB-2U-Zh6" secondAttribute="centerY" id="xgu-bR-xFt"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="29D-1z-1YO" firstAttribute="top" secondItem="iug-J5-d8m" secondAttribute="top" id="Wjs-7s-BWm"/>
+                            <constraint firstItem="qdS-Fd-OIt" firstAttribute="top" secondItem="29D-1z-1YO" secondAttribute="bottom" id="twe-Oo-SrF"/>
+                            <constraint firstAttribute="trailing" secondItem="29D-1z-1YO" secondAttribute="trailing" id="wWk-FG-owX"/>
+                            <constraint firstItem="29D-1z-1YO" firstAttribute="leading" secondItem="iug-J5-d8m" secondAttribute="leading" id="zm9-Ov-MVv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="29D-1z-1YO" id="DZc-UD-mPV"/>
+                        <outlet property="cancelButton" destination="879-2a-pDx" id="hGe-hY-7hW"/>
+                        <outlet property="contentView" destination="VdT-3N-31W" id="piU-h1-ftI"/>
+                        <outlet property="iconImageView" destination="72y-Y4-ZKG" id="SUb-S3-fnY"/>
+                        <outlet property="instructionLabel" destination="Ti6-zK-dEO" id="uMF-j7-eTk"/>
+                        <outlet property="okButton" destination="Kjc-15-uGs" id="Bgd-nm-JLj"/>
+                        <outlet property="titleLabel" destination="ulb-k2-pi7" id="XJU-q5-krc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neJ-bU-Ocu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-425.03748125937034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notification" width="225" height="225"/>
+    </resources>
+</document>

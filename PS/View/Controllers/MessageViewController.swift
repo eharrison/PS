@@ -63,14 +63,23 @@ class MessageViewController: UIViewController {
                 })
                 
                 if let date = date {
-                    Timer.scheduledTimer(withTimeInterval: date.timeIntervalSinceNow, repeats: false, block: { (timer) in
-                        self.contentView.hideMessageView()
-                        self.nextMessage()
-                    })
+                    if #available(iOS 10.0, *) {
+                        Timer.scheduledTimer(withTimeInterval: date.timeIntervalSinceNow, repeats: false, block: { (timer) in
+                            self.contentView.hideMessageView()
+                            self.nextMessage()
+                        })
+                    } else {
+                        Timer.scheduledTimer(timeInterval: date.timeIntervalSinceNow, target: self, selector: #selector(MessageViewController.contentAvailable), userInfo: nil, repeats: false)
+                    }
                 }
             }
         }
         
+    }
+    
+    func contentAvailable(){
+        self.contentView.hideMessageView()
+        self.nextMessage()
     }
 
 }
