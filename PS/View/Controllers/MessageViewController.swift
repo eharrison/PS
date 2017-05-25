@@ -19,6 +19,12 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor.colorWithTime
+        topGradientView.gradientTopColor = UIColor.colorWithTime
+        topGradientView.gradientBottomColor = UIColor.colorWithTime.withAlphaComponent(0)
+        bottomGradientView.gradientTopColor = UIColor.colorWithTime.withAlphaComponent(0)
+        bottomGradientView.gradientBottomColor = UIColor.colorWithTime
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,6 +37,10 @@ class MessageViewController: UIViewController {
                 self.startedAnimation = true
             }
         })
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - Animations
