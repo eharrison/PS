@@ -25,17 +25,17 @@ extension UIColor {
     static func color(withHour hour: Double) -> UIColor {
         switch hour {
         case 6...8:
-            return rgbColor(42, 200, 248)
+            return rgbColor(42, 140, 248, 1)
         case 8...17:
-            return rgbColor(42, 140, 248)
+            return rgbColor(42, 140, 248, 0.8)
         case 17...18:
-            return rgbColor(42, 50, 248)
+            return rgbColor(42, 140, 248, 0.6)
         case 18...19:
-            return rgbColor(42, 0, 248)
+            return rgbColor(42, 140, 248, 0.5)
         case 19...20:
-            return rgbColor(42, 0, 128)
+            return rgbColor(42, 140, 248, 0.4)
         case 20...22:
-            return rgbColor(42, 0, 100)
+            return rgbColor(42, 140, 248, 0.2)
         default:
             return .black
         }

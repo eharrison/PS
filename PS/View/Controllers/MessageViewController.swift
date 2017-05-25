@@ -19,12 +19,6 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.colorWithTime
-        topGradientView.gradientTopColor = UIColor.colorWithTime
-        topGradientView.gradientBottomColor = UIColor.colorWithTime.withAlphaComponent(0)
-        bottomGradientView.gradientTopColor = UIColor.colorWithTime.withAlphaComponent(0)
-        bottomGradientView.gradientBottomColor = UIColor.colorWithTime
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,6 +31,15 @@ class MessageViewController: UIViewController {
                 self.startedAnimation = true
             }
         })
+        
+        //change background color based on time
+        UIView.animate(withDuration: 0.3) {
+            self.view.backgroundColor = UIColor.colorWithTime
+            self.topGradientView.gradientTopColor = UIColor.colorWithTime
+            self.topGradientView.gradientBottomColor = UIColor.colorWithTime.withAlphaComponent(0)
+            self.bottomGradientView.gradientTopColor = UIColor.colorWithTime.withAlphaComponent(0)
+            self.bottomGradientView.gradientBottomColor = UIColor.colorWithTime
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
