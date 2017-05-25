@@ -23,43 +23,112 @@ extension FirebaseHelper {
                                 action1: "I'm ready!"))
         
         messages.append(Message(type: .message,
-                                message: "Hi there!",
+                                message: "Hi! 🙂",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "It's a great day!",
-                                date: "2017-05-24 8:18",
+                                message: "It's a great day! Isn't it?",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "It works!",
-                                date: "2017-05-24 10:00",
+                                message: "...or at least we can make it a great day! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "What do you think?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I have a plan!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "But before... I have a question...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Because I can't seem to remember... 😅",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "What is... your name again?",
                                 timeout: 2))
         
         messages.append(Message(type: .input,
-                                message: "What's your name?",
-                                date: "2017-05-17 11:00",
+                                message: "Your name...",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "Wooohooo!",
-                                date: "2017-05-17 11:00",
+                                message: "Oh, I just remembered!",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "hahah!",
-                                date: "2017-05-17 11:00",
+                                message: "Ириночка!",
                                 timeout: 2))
         
-        messages.append(Message(type: .action,
-                                date: "2017-05-17 11:00",
-                                action1: "Click here!!"))
+        messages.append(Message(type: .message,
+                                message: "🙂",
+                                timeout: 1))
+        
+        messages.append(Message(type: .message,
+                                message: "BTW, I do you want me to speak Russian?",
+                                timeout: 2))
         
         messages.append(Message(type: .options,
-                                message: "Choose!!",
-                                date: "2017-05-17 11:00",
+                                message: "Speak Russian",
                                 action1: "Yes",
                                 action2: "No"))
+        
+        messages.append(Message(type: .message,
+                                message: "Just kidding! I can't... 😂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Anyways... back to the plan!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "hmmmm...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Actually, I won't tell you! 😏",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "...I'll give you some clues instead.",
+                                timeout: 2))
+        
+        //......
+        
+        messages.append(Message(type: .message,
+                                message: "When you are on your way home, I need you to get something for me...",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "Don't worry, it's easy, on the way back home!",
+                                timeout: 2))
+        
+        //......
+        
+        messages.append(Message(type: .action,
+                                message: "Only continue if you already picked it up! No cheating!! 🙂",
+                                date: "2017-05-25 14:17",
+                                action1: "I picked it up!"))
+
+        
+        
+        
+        
+        
+        
+        
+//
+//        messages.append(Message(type: .options,
+//                                message: "Choose!!",
+//                                date: "2017-05-17 11:00",
+//                                action1: "Yes",
+//                                action2: "No"))
         
         
         // Populate database

@@ -29,6 +29,8 @@ class MessageViewController: UIViewController {
                 self.messages = messages
                 self.nextMessage()
                 self.startedAnimation = true
+                
+                MVNotificationsHelper.setupNotifications(withMessages: messages)
             }
         })
         
