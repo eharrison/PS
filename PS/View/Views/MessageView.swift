@@ -15,6 +15,7 @@ let outDuration: Double = 0.5
 class MessageView: UIView {
     
     @IBOutlet weak var messageLabel: UILabel?
+    @IBOutlet weak var messageDetailLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField?
     @IBOutlet weak var option1Button: UIButton?
     @IBOutlet weak var option2Button: UIButton?
@@ -22,29 +23,37 @@ class MessageView: UIView {
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
     var message: Message?
+    var countdownDate: Date?
+    var countdownTimer: Timer?
+    var countdownFinishedCallback: (()->Void)?
     
     var timeout: Double {
         return self.message?.timeout ?? 0
     }
     
-    static func newInstance(type: FirebaseKeyType) -> MessageView?{
+    static func newInstance(type: FirebaseKeyType, isCountdown: Bool) -> MessageView?{
         var index = 0
+        
+        //if is countdown, show countdown
+        if isCountdown {
+            return Bundle(for: self).loadNibNamed("MessageView", owner: self, options: nil)![index] as? MessageView
+        }
         
         switch type {
         case .message:
-            index = 0
-            break
-        case .input:
             index = 1
             break
-        case .action:
+        case .input:
             index = 2
+            break
+        case .action:
+            index = 3
             break
         case .enablePush:
-            index = 2
+            index = 3
             break
         case .options:
-            index = 3
+            index = 4
             break
         }
         
@@ -68,6 +77,8 @@ extension MessageView {
         
         self.option1Button?.setTitle(message?.action1, for: .normal)
         self.option2Button?.setTitle(message?.action2, for: .normal)
+        
+        self.startCountdown()
         
         //----------
         
@@ -178,6 +189,51 @@ extension MessageView {
     }
 }
 
+// MARK: - Countdown
+
+extension MessageView {
+    
+    func startCountdown(){
+        guard countdownDate != nil else{
+            return
+        }
+        
+        updateCounter()
+        
+        countdownTimer?.invalidate()
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target:self, selector: #selector(MessageView.updateCounter), userInfo: nil, repeats: true)
+    }
+    
+    func updateCounter(){
+        guard let date = countdownDate else{
+            messageDetailLabel.text = "00d 00h 00m 00s"
+            
+            countdownTimer?.invalidate()
+            countdownFinishedCallback?()
+            return
+        }
+        
+        let timeLeft = date.timeIntervalSinceNow
+        
+        messageDetailLabel.text = "\(timeLeft.days)d \(timeLeft.hours)h \(timeLeft.minutes)m \(timeLeft.seconds)s"
+
+        if timeLeft <= 0.0 {
+            countdownTimer?.invalidate()
+            countdownFinishedCallback?()
+        }
+    }
+    
+    func removeLeadingZeros(_ value: String) -> String {
+        var string = value
+        if string.characters.count > 1 && string.hasPrefix("0") {
+            string.remove(at: string.startIndex)
+        }
+        return string
+    }
+    
+}
+
+
 // MARK: - UIView Extensions
 
 extension UIView {
@@ -189,13 +245,15 @@ extension UIView {
         }
     }
     
-    func showMessageView(message: Message, shown: (()->Void)? = nil, hidden: (()->Void)? = nil){
+    func showMessageView(message: Message, countdownTo: Date? = nil, shown: (()->Void)? = nil, hidden: (()->Void)? = nil, countdownFinished: (()->Void)? = nil){
         //hideMessageView()
         
-        if let messageView = MessageView.newInstance(type: message.type) {
+        if let messageView = MessageView.newInstance(type: message.type, isCountdown: countdownTo != nil) {
             messageView.shownCallback = shown
             messageView.hiddenCallback = hidden
+            messageView.countdownFinishedCallback = countdownFinished
             messageView.message = message
+            messageView.countdownDate = countdownTo
             messageView.frame = self.bounds
             self.addSubview(messageView)
             messageView.show()

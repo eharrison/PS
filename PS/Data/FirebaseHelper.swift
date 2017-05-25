@@ -30,9 +30,6 @@ class FirebaseHelper: NSObject {
         dictionary[firKey(.action)] = message.action.rawValue
         dictionary[firKey(.needAnswer)] = message.needAnswer
         
-        // TODO: - Remove this so that the messages can be set to Read
-        dictionary[firKey(.read)] = false
-        
         if let message = message.message {
             dictionary[firKey(.message)] = message
         }
@@ -59,7 +56,13 @@ class FirebaseHelper: NSObject {
         }
         
         let database = FIRDatabase.database().reference()
-        database.child(firKey(.messages)).child("\(id)").updateChildValues(dictionary)
+        
+        //in case we are reseting the database, don't update, only replace
+        if resetDatabase {
+            database.child(firKey(.messages)).child("\(id)").setValue(dictionary)
+        }else{
+            database.child(firKey(.messages)).child("\(id)").updateChildValues(dictionary)
+        }
     }
     
     /// Fetches all messages

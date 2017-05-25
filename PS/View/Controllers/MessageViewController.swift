@@ -53,33 +53,15 @@ class MessageViewController: UIViewController {
                 }
             }else{
                 //not time for message yet
-                
-                let date = message.date?.toDate(format: "yyyy-MM-dd HH:mm")
-                let dateString = date?.toString(format: "MMM dd - HH:mm") ?? ""
-                self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\n\nNext message will come at:\n\(dateString)"), shown:{
+                self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\n\nNext message will come in:"), countdownTo: message.date?.toDate(format: "yyyy-MM-dd HH:mm"), shown:{
                     
                 }, hidden:{
                     
+                }, countdownFinished: {
+                    self.contentView.hideMessageView()
+                    self.nextMessage()
                 })
-                
-                if let date = date {
-                    if #available(iOS 10.0, *) {
-                        Timer.scheduledTimer(withTimeInterval: date.timeIntervalSinceNow, repeats: false, block: { (timer) in
-                            self.contentView.hideMessageView()
-                            self.nextMessage()
-                        })
-                    } else {
-                        Timer.scheduledTimer(timeInterval: date.timeIntervalSinceNow, target: self, selector: #selector(MessageViewController.contentAvailable), userInfo: nil, repeats: false)
-                    }
-                }
             }
         }
-        
     }
-    
-    func contentAvailable(){
-        self.contentView.hideMessageView()
-        self.nextMessage()
-    }
-
 }

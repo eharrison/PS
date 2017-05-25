@@ -8,6 +8,8 @@
 
 import Foundation
 
+let resetDatabase = true
+
 extension FirebaseHelper {
     
     /// Saves new messages
@@ -17,12 +19,11 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
-                                date: "2017-05-24 8:42",
-                                action1: "Get started!"))
+                                date: "2017-05-25 10:33",
+                                action1: "I'm ready!"))
         
         messages.append(Message(type: .message,
                                 message: "Hi there!",
-                                date: "2017-05-24 8:43",
                                 timeout: 2))
         
         messages.append(Message(type: .message,

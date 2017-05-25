@@ -43,3 +43,23 @@ extension Float {
         return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
 }
+
+extension TimeInterval {
+    
+    var days: String {
+        return String(format:"%02d", Int((self/86400)))
+    }
+    
+    var hours: String {
+        return String(format:"%02d", Int((self/3600.0).truncatingRemainder(dividingBy: 24)))
+    }
+    
+    var minutes: String {
+        return String(format:"%02d", Int((self/60.0).truncatingRemainder(dividingBy: 60)))
+    }
+    
+    var seconds: String {
+        return String(format:"%02d", Int((self).truncatingRemainder(dividingBy: 60)))
+    }
+    
+}
