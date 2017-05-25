@@ -19,7 +19,7 @@ extension FirebaseHelper {
         
 //        messages.append(Message(type: .enablePush,
 //                                message: "Let me know when you are ready! 🙂",
-//                                date: "2017-05-25 10:33",
+//                                date: "2017-06-05 09:00",
 //                                action1: "I'm ready!"))
 //        
 //        messages.append(Message(type: .message,
@@ -137,9 +137,9 @@ extension FirebaseHelper {
 //                                timeout: 2))
 //        
 //        messages.append(Message(type: .action,
-//                                message: "At my desk, by the window, there is something wrapped in newspaper. Get it, and put it on your bag (you might need it later 🙂).\nPS. you can get a chocolate from the can too! 🙂",
+//                                message: "At my desk, by the window, there is something wrapped in newspaper. Get it, and put it on your bag (you might need it later. Exciting, right? 🙂).\nPS. you can get a chocolate from the can too! 🙂",
 //                                action1: "Done!"))
-//        
+//
 //        messages.append(Message(type: .message,
 //                                message: "Awesome!!\nYou just finished your first mission! 🙂",
 //                                timeout: 3))
@@ -160,9 +160,32 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .message,
                                 message: "Hi again!!\nI hope your day was awesome! 😎",
+                                date: "2017-05-25 17:00",
                                 timeout: 3))
         
-        ///
+        messages.append(Message(type: .message,
+                                message: "Well, it's not over yet...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I have another mission for you!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "yes, really exciting!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Right? 🙂",
+                                timeout: 1))
+        
+        messages.append(Message(type: .message,
+                                message: "ok... here it goes.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "MISSION 2",
+                                timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "When you are on your way home, I need you to get something for me...",
@@ -172,16 +195,23 @@ extension FirebaseHelper {
                                 message: "Don't worry, it's easy...",
                                 timeout: 2))
         
+        /////Check and update
+        messages.append(Message(type: .action,
+                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Flora...`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
+                                action1: "I have it!"))
+        
+        messages.append(Message(type: .action,
+                                message: "You are not cheating, are you?",
+                                action1: "Of course not!"))
+        
         messages.append(Message(type: .message,
-                                message: "And it's not a bomb either",
+                                message: "Ok, I believe you! 🙂",
                                 timeout: 2))
+        
+        
         
         //......
         
-        messages.append(Message(type: .action,
-                                message: "Only continue if you already picked it up! No cheating!! 🙂",
-                                date: "2017-05-25 14:17",
-                                action1: "I picked it up!"))
 
         
         
