@@ -76,9 +76,9 @@ extension FirebaseHelper {
 //        
 //        messages.append(Message(type: .options,
 //                                message: "Speak Russian",
-//                                action1: "Yes",
-//                                action2: "No"))
-//        
+//                                action1: "No",
+//                                action2: "Yes"))
+//
 //        messages.append(Message(type: .message,
 //                                message: "Just kidding! I can't... 😂",
 //                                timeout: 2))
@@ -105,9 +105,9 @@ extension FirebaseHelper {
 //        
 //        messages.append(Message(type: .options,
 //                                message: "deal?",
-//                                action1: "Yes",
-//                                action2: "No"))
-//        
+//                                action1: "No",
+//                                action2: "Yes"))
+//
 //        messages.append(Message(type: .message,
 //                                message: "I'll believe you! 🙃",
 //                                timeout: 2))
@@ -208,7 +208,54 @@ extension FirebaseHelper {
                                 message: "Ok, I believe you! 🙂",
                                 timeout: 2))
         
+        messages.append(Message(type: .message,
+                                message: "So, now you can go get your dinner in ISETAN.\nBut no sweeties for today!! 😛",
+                                timeout: 4))
         
+        messages.append(Message(type: .action,
+                                message: "As soon as you get home, let me know...",
+                                action1: "I'm home!"))
+        
+        messages.append(Message(type: .action,
+                                message: "Awesome!! So you know what to do! TIP: Use what you got in the office in the morning! 😊",
+                                action1: "It's done!"))
+        
+        messages.append(Message(type: .message,
+                                message: "So...",
+                                timeout: 1))
+        
+        messages.append(Message(type: .message,
+                                message: "Roses, because you like flowers.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "3, Because you like this number (remember my mind reading magic? 🎩)",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "White and Red, because they are your favourites.",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "I hope I could make you smile... 🙂",
+                                timeout: 3))
+        
+        messages.append(Message(type: .options,
+                                message: "Do you like it?",
+                                action1: "No",
+                                action2: "Yes"))
+
+        messages.append(Message(type: .action,
+                                message: "Awesome!! I'm curious! Your mission now is to send me a picture in Whatsapp (+60 17 352-7034)!!",
+                                action1: "Sent it!"))
+        
+        messages.append(Message(type: .message,
+                                message: "Yay! Enjoy your dinner and the rest of your night!",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "Talk to you tomorrow! 😉",
+                                timeout: 2))
         
         //......
         
