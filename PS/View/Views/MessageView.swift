@@ -82,13 +82,13 @@ extension MessageView {
         
         //----------
         
-        self.frame.origin.y = superview?.frame.size.height ?? UIScreen.main.bounds.size.height
+        //self.frame.origin.y = superview?.frame.size.height ?? UIScreen.main.bounds.size.height
         self.isHidden = false
         self.alpha = 0
         
         UIView.animate(withDuration: outDuration, delay: 0, options: .curveEaseOut, animations: {
             self.alpha = 1
-            self.frame.origin.y = 0
+            //self.frame.origin.y = 0
         }) { (completed) in
             if self.timeout > 0 {
                 Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
