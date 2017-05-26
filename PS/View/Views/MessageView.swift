@@ -11,6 +11,8 @@ import UIKit
 let readDuration: Double = 2
 let inDuration: Double = 0.5
 let outDuration: Double = 0.5
+let playNotification = Notification.Name(rawValue: "playNotification")
+let pauseNotification = Notification.Name(rawValue: "pauseNotification")
 
 class MessageView: UIView {
     
@@ -20,11 +22,13 @@ class MessageView: UIView {
     @IBOutlet weak var option1Button: UIButton?
     @IBOutlet weak var option2Button: UIButton?
     
+    var playing: Bool = false
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
     var message: Message?
     var countdownDate: Date?
     var countdownTimer: Timer?
+    var timeoutTimer: Timer?
     var countdownFinishedCallback: (()->Void)?
     
     var timeout: Double {
@@ -62,12 +66,29 @@ class MessageView: UIView {
     
     override func awakeFromNib() {
         self.isHidden = true
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(MessageView.pause), name: playNotification, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(MessageView.play), name: pauseNotification, object: nil)
     }
 }
 
 //MARK: - Animations
 
 extension MessageView {
+    
+    func pause() {
+        playing = false
+        
+        self.timeoutTimer?.invalidate()
+    }
+    
+    func play() {
+        playing = true
+        
+        if self.timeout > 0 {
+            self.timeoutTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
+        }
+    }
     
     func show() {
         self.messageLabel?.text = message?.message
@@ -91,7 +112,7 @@ extension MessageView {
             //self.frame.origin.y = 0
         }) { (completed) in
             if self.timeout > 0 {
-                Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
+                self.timeoutTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(MessageView.hideAfterDelay(_:)), userInfo: nil, repeats: false)
             }
             
             self.shownCallback?()

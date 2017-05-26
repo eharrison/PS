@@ -28,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         UIApplication.shared.applicationIconBadgeNumber = 0
+        
+        NotificationCenter.default.post(name: playNotification, object: nil)
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        NotificationCenter.default.post(name: pauseNotification, object: nil)
     }
 
 }

@@ -13,6 +13,7 @@ class MessageViewController: UIViewController {
     @IBOutlet weak var topGradientView: DesignableView!
     @IBOutlet weak var bottomGradientView: DesignableView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var historyButton: UIButton!
     
     var startedAnimation = false
     var messages = [Message]()
@@ -46,6 +47,12 @@ class MessageViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    // MARK: - Navigation
+    
+    @IBAction func unwindToMessage(_ segue: UIStoryboardSegue){
+        
     }
     
     // MARK: - Animations

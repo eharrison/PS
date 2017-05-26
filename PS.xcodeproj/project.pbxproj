@@ -45,6 +45,11 @@
 		0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */; };
 		0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A5C1ED4849D00EF1609 /* Message.swift */; };
 		0AEE48E51ED67BAB00471129 /* UIColor+DayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E41ED67BAB00471129 /* UIColor+DayTime.swift */; };
+		0AEE48E71ED7276000471129 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E61ED7276000471129 /* HistoryViewController.swift */; };
+		0AEE48E91ED727F100471129 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */; };
+		0AEE48EB1ED729EE00471129 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */; };
+		0AEE48ED1ED729F500471129 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */; };
+		0AEE48EF1ED72A0200471129 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */; };
 		733379F3358EB03083E9DD0C /* Pods_PS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87402482B0CD08F44B1C3E69 /* Pods_PS.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +94,11 @@
 		0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
 		0ACF0A5C1ED4849D00EF1609 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0AEE48E41ED67BAB00471129 /* UIColor+DayTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DayTime.swift"; sourceTree = "<group>"; };
+		0AEE48E61ED7276000471129 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTableViewCell.swift; sourceTree = "<group>"; };
+		0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		73164C272DC059303B5192C2 /* Pods-PS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.debug.xcconfig"; sourceTree = "<group>"; };
 		87402482B0CD08F44B1C3E69 /* Pods_PS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34D7690D1A0711E9E38CC0 /* Pods-PS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +211,10 @@
 		0ACF0A1C1ED3111300EF1609 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */,
+				0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */,
+				0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */,
+				0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACF0A411ED314D100EF1609 /* MessageViewController.swift */,
+				0AEE48E61ED7276000471129 /* HistoryViewController.swift */,
 				0A1CFFE01ED5070C009D9FD3 /* AlertViewController.swift */,
 			);
 			path = Controllers;
@@ -430,6 +445,7 @@
 				0ACF0A351ED312B700EF1609 /* DesignableNavigationBar.swift in Sources */,
 				0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */,
 				0ACF0A381ED312B700EF1609 /* DesignableTextView.swift in Sources */,
+				0AEE48E91ED727F100471129 /* MessageTableViewCell.swift in Sources */,
 				0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */,
 				0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */,
 				0AEE48E51ED67BAB00471129 /* UIColor+DayTime.swift in Sources */,
@@ -440,7 +456,9 @@
 				0ACF0A3D1ED312B700EF1609 /* UIViewControllerExtensions.swift in Sources */,
 				0ACF0A3A1ED312B700EF1609 /* NSNumberExtensions.swift in Sources */,
 				0ACF0A561ED3AA6800EF1609 /* String+Quests.swift in Sources */,
+				0AEE48EF1ED72A0200471129 /* OptionsTableViewCell.swift in Sources */,
 				0ACF0A331ED312B700EF1609 /* DesignableImageView.swift in Sources */,
+				0AEE48EB1ED729EE00471129 /* InputTableViewCell.swift in Sources */,
 				0ACF0A3C1ED312B700EF1609 /* UIViewAnimations.swift in Sources */,
 				0ACF0A571ED3AA6800EF1609 /* StringExtensions.swift in Sources */,
 				0ACF0A371ED312B700EF1609 /* DesignableTextField.swift in Sources */,
@@ -454,6 +472,8 @@
 				0A1CFFD91ED4FCB4009D9FD3 /* MVFeedbackHelper.swift in Sources */,
 				0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */,
 				0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */,
+				0AEE48ED1ED729F500471129 /* ActionTableViewCell.swift in Sources */,
+				0AEE48E71ED7276000471129 /* HistoryViewController.swift in Sources */,
 				0ACF0A421ED314D100EF1609 /* MessageViewController.swift in Sources */,
 				0ACF0A321ED312B700EF1609 /* DesignableButton.swift in Sources */,
 				0ACF0A3B1ED312B700EF1609 /* UIBezierPath+Polygon.swift in Sources */,
