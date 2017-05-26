@@ -76,7 +76,7 @@ extension MVNotificationsHelper {
                     let category = MVNotificationCategories.beginContent.rawValue
                     
                     scheduleNotification(NotificationItem(
-                        message: "I've got something new for you! 🙂",
+                        message: "Hi!! I've got something new for you! 🙂",
                         actionName: "Read it".localized,
                         date: notificationDate,
                         objectType: type,

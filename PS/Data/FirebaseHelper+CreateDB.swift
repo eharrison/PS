@@ -8,7 +8,7 @@
 
 import Foundation
 
-let resetDatabase = true
+let resetDatabase = false
 
 extension FirebaseHelper {
     
@@ -197,7 +197,7 @@ extension FirebaseHelper {
         
         /////Check and update
         messages.append(Message(type: .action,
-                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Flora...`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
+                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
                                 action1: "I have it!"))
         
         messages.append(Message(type: .action,
