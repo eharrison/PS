@@ -213,6 +213,8 @@ extension MessageView {
     @IBAction func option2Pressed(_ sender: UIButton) {
         sender.selectionFeedback()
         sender.animateTouchDown(halfWay: {
+            self.message?.read = true
+            self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
             self.message?.answer = self.message?.action2
             if let message = self.message {
                 FirebaseHelper.save(message: message)

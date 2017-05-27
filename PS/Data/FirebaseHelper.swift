@@ -12,6 +12,8 @@ import FirebaseStorage
 
 class FirebaseHelper: NSObject {
     
+    static var resetDatabase = false
+    
     static func configure(){
         FIRApp.configure()
     }

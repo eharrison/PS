@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PS
+//  PS-Editor
 //
-//  Created by Evandro Harrison Hoffmann on 5/22/17.
+//  Created by Evandro Harrison Hoffmann on 5/27/17.
 //  Copyright © 2017 It's Day Off. All rights reserved.
 //
 
@@ -11,15 +11,18 @@ import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     static var current: AppDelegate? {
         return UIApplication.shared.delegate as? AppDelegate
     }
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseHelper.configure()
+        
+        //FirebaseHelper.resetDatabase = true
+        FirebaseHelper.createDB()
         
         return true
     }
@@ -33,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         NotificationCenter.default.post(name: pauseNotification, object: nil)
     }
-
+    
 }
 
 // MARK: - Notifications
