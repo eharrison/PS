@@ -70,7 +70,7 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
             cell.dateLabel.text = dateFormatted
         } else if let cell = cell as? ActionTableViewCell {
             cell.messageLabel.text = messages[indexPath.row].message
-            cell.actionLabel.text = messages[indexPath.row].action1
+            cell.actionLabel.text = messages[indexPath.row].answer
             cell.dateLabel.text = dateFormatted
         } else if let cell = cell as? OptionsTableViewCell {
             cell.messageLabel.text = messages[indexPath.row].message

@@ -15,7 +15,7 @@ extension FirebaseHelper {
         
         var messages = [Message]()
         
-        // 1 ......
+        // Day 1 / 1 ......
         
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
@@ -156,7 +156,7 @@ extension FirebaseHelper {
                                 message: "Have an awesome day! 😎",
                                 timeout: 2))
         
-        // 2 ......
+        // Day 1 / 2 ......
         
         messages.append(Message(type: .message,
                                 message: "Hi again!!\nI hope your day was awesome! 😎",
@@ -265,7 +265,7 @@ extension FirebaseHelper {
                                 message: "...Brazilian goodbye! 🙂",
                                 timeout: 2))
  
-        // 3 ......
+        // Day 2 / 1 ......
         
         messages.append(Message(type: .message,
                                 message: "Good morning!! 🙂",
@@ -312,12 +312,12 @@ extension FirebaseHelper {
                                 message: "What do you say?\nReady for a special day?",
                                 action1: "Yes!!"))
         
-//
-//        messages.append(Message(type: .options,
-//                                message: "Choose!!",
-//                                date: "2017-05-17 11:00",
-//                                action1: "Yes",
-//                                action2: "No"))
+        // Day 3 / 1 ......
+        
+        messages.append(Message(type: .action,
+                                message: "доброе",
+                                action1: "Yes!!"))
+
         
         
         // Populate database
