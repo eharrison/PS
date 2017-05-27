@@ -84,6 +84,13 @@ class MessageViewController: UIViewController {
                     self.nextMessage()
                 })
             }
+        } else {
+            //no more messages
+            self.contentView.showMessageView(message: Message(type: .message, message: "Oh no! I don't have any more messages to show...\nMaybe they'll come back.\nBe tuned! 🙂"), shown:{
+                
+            }, hidden:{
+                
+            })
         }
     }
 }
