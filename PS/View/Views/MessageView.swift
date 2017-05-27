@@ -153,9 +153,9 @@ extension MessageView {
         }
         
         #if !Editor
-        message.read = true
-        message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
-        FirebaseHelper.save(message: message)
+            message.read = true
+            message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
+            FirebaseHelper.save(message: message)
         #endif
     }
 }

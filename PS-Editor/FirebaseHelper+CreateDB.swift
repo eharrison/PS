@@ -19,11 +19,11 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
-                                date: "2017-06-05 09:00",
                                 action1: "I'm ready!"))
         
         messages.append(Message(type: .message,
                                 message: "Hi! 🙂",
+                                date: "2017-06-05 09:00",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
