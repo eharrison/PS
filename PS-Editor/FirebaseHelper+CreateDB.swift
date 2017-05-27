@@ -264,7 +264,7 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "...Brazilian goodbye! 🙂",
                                 timeout: 2))
-        
+ 
         // 3 ......
         
         messages.append(Message(type: .message,
@@ -275,6 +275,42 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "It's a beautiful day, isn't it? 😊",
                                 timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I hope you enjoyed yesterday.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I sure did enjoy planning it. 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "So...",
+                                timeout: 1))
+        
+        messages.append(Message(type: .message,
+                                message: "You told me more than once, that every day should/could be special.",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "Right? 😉",
+                                timeout: 1))
+        
+        messages.append(Message(type: .message,
+                                message: "I think so too!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I'm here to make sure every single day is special for you.",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "Because you are special. 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .action,
+                                message: "What do you say?\nReady for a special day?",
+                                action1: "Yes!!"))
         
 //
 //        messages.append(Message(type: .options,

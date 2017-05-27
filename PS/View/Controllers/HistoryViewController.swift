@@ -20,6 +20,7 @@ class HistoryViewController: UIViewController {
         
         FirebaseHelper.messages({ (messages) in
             self.filterRead(messages: messages)
+            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(HistoryViewController.scrollToLast), userInfo: nil, repeats: false)
         })
     }
 }
@@ -27,6 +28,12 @@ class HistoryViewController: UIViewController {
 // MARK: - TableView Data source
 
 extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func scrollToLast(){
+        if messages.count > 0 {
+            self.tableView.scrollToRow(at: IndexPath(row: messages.count-1, section: 0), at: .bottom, animated: true)
+        }
+    }
     
     func filterRead(messages: [Message]) {
         var read = [Message]()
