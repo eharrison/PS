@@ -20,12 +20,12 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshContent()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        refreshContent()
         
         NotificationCenter.default.addObserver(self, selector: #selector(MessageViewController.refreshContent), name: playNotification, object: nil)
     }

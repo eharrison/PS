@@ -16,14 +16,14 @@ extension FirebaseHelper {
         var messages = [Message]()
         
         // Day 1 / 1 ......
-        
+        /*
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
                                 action1: "I'm ready!"))
         
         messages.append(Message(type: .message,
                                 message: "Hi! 🙂",
-                                date: "2017-06-05 09:00",
+                                date: "2017-06-05 09:02",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
@@ -160,7 +160,7 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .message,
                                 message: "Hi again!!\nI hope your day was awesome! 😎",
-                                date: "2017-06-05 17:00",
+                                date: "2017-06-05 17:01",
                                 timeout: 3))
         
         messages.append(Message(type: .message,
@@ -195,7 +195,7 @@ extension FirebaseHelper {
                                 message: "Don't worry, it's easy...",
                                 timeout: 2))
         
-        /////Check and update
+        // TODO: - ACTION REQUIRED!!!
         messages.append(Message(type: .action,
                                 message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
                                 action1: "I have it!"))
@@ -269,7 +269,7 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .message,
                                 message: "Good morning!! 🙂",
-                                date: "2017-06-06 09:00",
+                                date: "2017-06-06 09:03",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
@@ -312,12 +312,274 @@ extension FirebaseHelper {
                                 message: "What do you say?\nReady for a special day?",
                                 action1: "Yes!!"))
         
-        // Day 3 / 1 ......
+        messages.append(Message(type: .message,
+                                message: "Of course I have another mission for you...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "this one will be to sweeten your day 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Already know what it is?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "well... you will know soon enough. For now, all you have to do is go to office 😉",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "yes, I know, office this week is not fun...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "because I'm not there... 😛",
+                                timeout: 2))
         
         messages.append(Message(type: .action,
-                                message: "доброе",
-                                action1: "Yes!!"))
-
+                                message: "Right? 😊",
+                                action1: "Right!!"))
+        
+        messages.append(Message(type: .message,
+                                message: "but it can be our secret...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "we are going to have fun anyways.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "we are going to smile anyways.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "we are going to be happy anyways. 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Awesome!?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "ok... so the mission!",
+                                timeout: 2))
+        
+        // TODO: - ACTION REQUIRED!!!
+        messages.append(Message(type: .action,
+                                message: "Once you get to your desk. Crouch and look under it! 😉",
+                                action1: "I have it and I love it!"))
+        
+        messages.append(Message(type: .options,
+                                message: "Do you really love it?",
+                                action1: "No 😕.",
+                                action2: "Yes!! 😄"))
+        
+        messages.append(Message(type: .message,
+                                message: "I hope you enjoy it! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Now I'll leave you focus on work! 😅",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Have an AWESOME day!! 😉",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "and have fun at the meetings... 😛",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "(Best thing about not being here today.)",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "ok, ok. I'm out! 😅",
+                                timeout: 2))
+        */
+        // Day 3 / 2 ......
+        
+        messages.append(Message(type: .message,
+                                message: "I'm back!",
+                                date: "2017-06-06 18:03",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Yes, I know. You missed me!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .options,
+                                message: "You did, right?",
+                                action1: "I guess...",
+                                action2: "Yes!! 🙂"))
+        
+        messages.append(Message(type: .message,
+                                message: "I knew it!!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "It's a gift. And a curse. 😎",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "So, what's the plan now?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Tell me, how's your day?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .input,
+                                message: "tell me something interesting 😏",
+                                needAnswer: true))
+        
+        messages.append(Message(type: .message,
+                                message: "Ha! I shouldn't start with the questions...",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "I know, I forgot! Can't help it! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "As you said before, silence with someone you are comfortable with is not akward. 🙂",
+                                timeout: 5))
+        
+        messages.append(Message(type: .message,
+                                message: "let's try it...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "...",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "... (smiling back at you) 😊 ...",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "...",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "Yes! I was very comfortable.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "You were right!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "btw, you look stunning today! 😉",
+                                timeout: 2))
+        
+        messages.append(Message(type: .picture,
+                                message: "Picture, please! 🙂\nIt's a mission!!",
+                                action1: "Take the picture!"))
+        
+        messages.append(Message(type: .message,
+                                message: "it's confirmed.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "You look amazing!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "...as always! ☺️",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Ok, I'll leave you here!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I mean, I'll get back to planning tomorrow...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Let's see what I can come up with! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Enjoy the rest of your evening!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "See you tomorrow!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "(leaving with a very nice Brazilian goodbye)",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "🙂",
+                                timeout: 1))
+        
+        // Day 3 / 1 ......
+        
+        messages.append(Message(type: .message,
+                                message: "доброе утро!!",
+                                date: "2017-06-07 09:02",
+                                timeout: 2))
+        
+        messages.append(Message(type: .options,
+                                message: "Как поживаете?",
+                                action1: "🙂",
+                                action2: "😊"))
+        
+        messages.append(Message(type: .message,
+                                message: "I hope this week is being fun for you! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "btw... did you notice the time I'm buzzing you?",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "It's never even! 🤣",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I mean, never :00. 😛",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Just to tease you! 🙃",
+                                timeout: 2))
+        
+        messages.append(Message(type: .options,
+                                message: "Is it working?",
+                                action1: "Not yet..",
+                                action2: "Yes!!!!"))
+        
+        messages.append(Message(type: .message,
+                                message: "good! 😎",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                timeout: 2))
+        
+        //.........
         
         
         // Populate database
