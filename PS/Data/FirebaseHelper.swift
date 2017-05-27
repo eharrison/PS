@@ -8,6 +8,7 @@
 
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
 
 class FirebaseHelper: NSObject {
     
@@ -47,6 +48,10 @@ class FirebaseHelper: NSObject {
             dictionary[firKey(.answer)] = answer
         }
         
+        if let imageUrl = message.imageUrl {
+            dictionary[firKey(.imageUrl)] = imageUrl
+        }
+        
         if let action1 = message.action1 {
             dictionary[firKey(.action1)] = action1
         }
@@ -62,6 +67,37 @@ class FirebaseHelper: NSObject {
             database.child(firKey(.messages)).child("\(id)").setValue(dictionary)
         }else{
             database.child(firKey(.messages)).child("\(id)").updateChildValues(dictionary)
+        }
+    }
+    
+    /// Uploads file
+    ///
+    /// - Parameters:
+    ///   - data: File data
+    ///   - completion: returns url in a block
+    static func upload(loadingView: UIView? = nil, image: UIImage?, completion: ((_ url: String?)->Void)?) {
+        guard let image = image, let data = UIImageJPEGRepresentation(image, 1.0) else {
+            completion?(nil)
+            return
+        }
+        
+        loadingView?.startLoadingAnimation()
+        
+        let storageRef = FIRStorage.storage().reference()
+        
+        let fileRef = storageRef.child("images/\(Date().timeIntervalSince1970).jpg")
+            
+        _ = fileRef.put(data, metadata: nil) { (metadata, error) in
+            loadingView?.stopLoadingAnimation()
+            
+            guard let metadata = metadata else {
+                print("Failed uploading: \(String(describing: error?.localizedDescription))")
+                completion?(nil)
+                return
+            }
+            // Metadata contains file metadata such as size, content-type, and download URL.
+            let downloadURL = metadata.downloadURL()?.absoluteString
+            completion?(downloadURL)
         }
     }
     
@@ -83,6 +119,7 @@ class FirebaseHelper: NSObject {
                             messageObj.type = firKeyValue(messageSnapshot, key: .type)
                             messageObj.message = stringValue(messageSnapshot, key: .message)
                             messageObj.date = stringValue(messageSnapshot, key: .date)
+                            messageObj.imageUrl = stringValue(messageSnapshot, key: .imageUrl)
                             messageObj.read = boolValue(messageSnapshot, key: .read)
                             messageObj.readAt = stringValue(messageSnapshot, key: .readAt)
                             messageObj.timeout = doubleValue(messageSnapshot, key: .timeout)
@@ -178,6 +215,7 @@ enum FirebaseKey: String {
     case needAnswer = "needAnswer"
     case timeout = "timeout"
     case waitTime = "waitTime"
+    case imageUrl = "imageUrl"
     
     case action = "action"
     case actionType = "actionType"
@@ -189,6 +227,7 @@ enum FirebaseKeyType: String {
     case message = "message"
     case input = "input"
     case action = "action"
+    case picture = "picture"
     case options = "options"
     case enablePush = "enablePush"
 }

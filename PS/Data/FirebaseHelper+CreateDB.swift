@@ -17,6 +17,7 @@ extension FirebaseHelper {
         
         var messages = [Message]()
         
+        // 1 ......
 //        messages.append(Message(type: .enablePush,
 //                                message: "Let me know when you are ready! 🙂",
 //                                date: "2017-06-05 09:00",
@@ -156,82 +157,82 @@ extension FirebaseHelper {
 //                                message: "Have an awesome day! 😎",
 //                                timeout: 2))
         
-        //......
+        // 2 ......
         
-        messages.append(Message(type: .message,
-                                message: "Hi again!!\nI hope your day was awesome! 😎",
-                                date: "2017-05-25 17:00",
-                                timeout: 3))
-        
-        messages.append(Message(type: .message,
-                                message: "Well, it's not over yet...",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "I have another mission for you!",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "yes, really exciting!",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "Right? 🙂",
-                                timeout: 1))
-        
-        messages.append(Message(type: .message,
-                                message: "ok... here it goes.",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "MISSION 2",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "When you are on your way home, I need you to get something for me...",
-                                timeout: 4))
-        
-        messages.append(Message(type: .message,
-                                message: "Don't worry, it's easy...",
-                                timeout: 2))
-        
-        /////Check and update
-        messages.append(Message(type: .action,
-                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
-                                action1: "I have it!"))
-        
-        messages.append(Message(type: .action,
-                                message: "You are not cheating, are you?",
-                                action1: "Of course not!"))
-        
-        messages.append(Message(type: .message,
-                                message: "Ok, I believe you! 🙂",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "So, now you can go get your dinner in ISETAN.\nBut no sweeties for today!! 😛",
-                                timeout: 4))
-        
-        messages.append(Message(type: .action,
-                                message: "As soon as you get home, let me know...",
-                                action1: "I'm home!"))
-        
-        messages.append(Message(type: .action,
-                                message: "Awesome!! So you know what to do! TIP: Use what you got in the office in the morning! 😊",
-                                action1: "It's done!"))
-        
-        messages.append(Message(type: .message,
-                                message: "So...",
-                                timeout: 1))
-        
-        messages.append(Message(type: .message,
-                                message: "Roses, because you like flowers.",
-                                timeout: 2))
-        
-        messages.append(Message(type: .message,
-                                message: "3, Because you like this number (remember my mind reading magic? 🎩)",
-                                timeout: 4))
-        
+//        messages.append(Message(type: .message,
+//                                message: "Hi again!!\nI hope your day was awesome! 😎",
+//                                date: "2017-05-25 17:00",
+//                                timeout: 3))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "Well, it's not over yet...",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "I have another mission for you!",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "yes, really exciting!",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "Right? 🙂",
+//                                timeout: 1))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "ok... here it goes.",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "MISSION 2",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "When you are on your way home, I need you to get something for me...",
+//                                timeout: 4))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "Don't worry, it's easy...",
+//                                timeout: 2))
+//        
+//        /////Check and update
+//        messages.append(Message(type: .action,
+//                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
+//                                action1: "I have it!"))
+//        
+//        messages.append(Message(type: .action,
+//                                message: "You are not cheating, are you?",
+//                                action1: "Of course not!"))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "Ok, I believe you! 🙂",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "So, now you can go get your dinner in ISETAN.\nBut no sweeties for today!! 😛",
+//                                timeout: 4))
+//        
+//        messages.append(Message(type: .action,
+//                                message: "As soon as you get home, let me know...",
+//                                action1: "I'm home!"))
+//        
+//        messages.append(Message(type: .action,
+//                                message: "Awesome!! So you know what to do! TIP: Use what you got in the office in the morning! 😊",
+//                                action1: "It's done!"))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "So...",
+//                                timeout: 1))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "Roses, because you like flowers.",
+//                                timeout: 2))
+//        
+//        messages.append(Message(type: .message,
+//                                message: "3, Because you like this number (remember my mind reading magic? 🎩)",
+//                                timeout: 4))
+//        
         messages.append(Message(type: .message,
                                 message: "White and Red, because they are your favourites.",
                                 timeout: 4))
@@ -244,10 +245,14 @@ extension FirebaseHelper {
                                 message: "Do you like it?",
                                 action1: "No",
                                 action2: "Yes"))
+        
+        messages.append(Message(type: .input,
+                                message: "How do you feel right now?",
+                                needAnswer: true))
 
-        messages.append(Message(type: .action,
-                                message: "Awesome!! I'm curious! Your mission now is to send me a picture in Whatsapp (+60 17 352-7034)!!",
-                                action1: "Sent it!"))
+        messages.append(Message(type: .picture,
+                                message: "Awesome!! I'm curious!\nYour mission now is to send me a picture. 😊",
+                                action1: "Send it!"))
         
         messages.append(Message(type: .message,
                                 message: "Yay! Enjoy your dinner and the rest of your night!",
@@ -256,6 +261,7 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "Talk to you tomorrow! 😉",
                                 timeout: 2))
+        
         
         //......
         

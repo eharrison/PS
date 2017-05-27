@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AwesomeData
 
 class HistoryViewController: UIViewController {
     
@@ -55,17 +56,11 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let cell = cell as? MessageTableViewCell {
             cell.messageLabel.text = messages[indexPath.row].message
-            
-            if let date = messages[indexPath.row].readAt?.toDate(format: "yyyy-MM-dd HH:mm") {
-                cell.dateLabel.text = "\(date.toString(format: "MMM dd"))\n\(date.toString(format: "h:mma"))"
-            }
+            cell.dateLabel.text = dateFormatted
         } else if let cell = cell as? ActionTableViewCell {
             cell.messageLabel.text = messages[indexPath.row].message
             cell.actionLabel.text = messages[indexPath.row].action1
-            
-            if let date = messages[indexPath.row].readAt?.toDate(format: "yyyy-MM-dd HH:mm") {
-                cell.dateLabel.text = "\(date.toString(format: "MMM dd"))\n\(date.toString(format: "h:mma"))"
-            }
+            cell.dateLabel.text = dateFormatted
         } else if let cell = cell as? OptionsTableViewCell {
             cell.messageLabel.text = messages[indexPath.row].message
             cell.action1Button.setTitle(messages[indexPath.row].action1, for: .normal)
@@ -74,16 +69,15 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
             cell.action1Button.isSelected = messages[indexPath.row].action1 == messages[indexPath.row].answer
             cell.action2Button.isSelected = messages[indexPath.row].action2 == messages[indexPath.row].answer
             
-            if let date = messages[indexPath.row].readAt?.toDate(format: "yyyy-MM-dd HH:mm") {
-                cell.dateLabel.text = "\(date.toString(format: "MMM dd"))\n\(date.toString(format: "h:mma"))"
-            }
+            cell.dateLabel.text = dateFormatted
         } else if let cell = cell as? InputTableViewCell {
             cell.titleLabel.text = messages[indexPath.row].message
             cell.answerLabel.text = messages[indexPath.row].answer
-            
-            if let date = messages[indexPath.row].readAt?.toDate(format: "yyyy-MM-dd HH:mm") {
-                cell.dateLabel.text = "\(date.toString(format: "MMM dd"))\n\(date.toString(format: "h:mma"))"
-            }
+            cell.dateLabel.text = dateFormatted
+        } else if let cell = cell as? ImageTableViewCell {
+            cell.titleLabel.text = messages[indexPath.row].message
+            cell.dateLabel.text = dateFormatted
+            _ = cell.pictureImageView.setImage(messages[indexPath.row].imageUrl, completion: nil)
         }
         
         return cell

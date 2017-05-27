@@ -43,5 +43,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Enable your camera to be able to take pictures to add to your messages.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Enable your photo library to be able to pick your photos add to your messages.</string>
 </dict>
 </plist>

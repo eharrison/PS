@@ -22,6 +22,7 @@ struct Message {
     var waitTime: Double = 0
     var action1: String?
     var action2: String?
+    var imageUrl: String?
     
     var canShow: Bool {
         guard let date = date?.toDate(format: "yyyy-MM-dd HH:mm") else {
@@ -31,11 +32,12 @@ struct Message {
         return Date() >= date
     }
     
-    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0, action1: String? = nil, action2: String? = nil) {
+    init(id: String? = nil, type: FirebaseKeyType = .message, message: String? = nil, action: FirebaseKeyAction = .none, imageUrl: String? = nil, date: String? = nil, read: Bool = false, readAt: String? = nil, answer: String? = nil, needAnswer: Bool = false, timeout: Double = 0, waitTime: Double = 0, action1: String? = nil, action2: String? = nil) {
         self.id = id
         self.message = message
         self.type = type
         self.action = action
+        self.imageUrl = imageUrl
         self.date = date
         self.read = read
         self.readAt = readAt

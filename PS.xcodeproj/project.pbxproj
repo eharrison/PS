@@ -50,6 +50,9 @@
 		0AEE48EB1ED729EE00471129 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */; };
 		0AEE48ED1ED729F500471129 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */; };
 		0AEE48EF1ED72A0200471129 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */; };
+		0AEE496A1ED90BE000471129 /* MVImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE49691ED90BE000471129 /* MVImagePickerView.swift */; };
+		0AEE496C1ED90C9D00471129 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE496B1ED90C9D00471129 /* ImageTableViewCell.swift */; };
+		0AEE496E1ED91B5F00471129 /* UIView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE496D1ED91B5F00471129 /* UIView+Loading.swift */; };
 		733379F3358EB03083E9DD0C /* Pods_PS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87402482B0CD08F44B1C3E69 /* Pods_PS.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +102,9 @@
 		0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTableViewCell.swift; sourceTree = "<group>"; };
 		0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		0AEE49691ED90BE000471129 /* MVImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVImagePickerView.swift; sourceTree = "<group>"; };
+		0AEE496B1ED90C9D00471129 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		0AEE496D1ED91B5F00471129 /* UIView+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Loading.swift"; sourceTree = "<group>"; };
 		73164C272DC059303B5192C2 /* Pods-PS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.debug.xcconfig"; sourceTree = "<group>"; };
 		87402482B0CD08F44B1C3E69 /* Pods_PS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34D7690D1A0711E9E38CC0 /* Pods-PS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PS/Pods-PS.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		0ACF0A1B1ED3111300EF1609 /* BaseControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0AEE49691ED90BE000471129 /* MVImagePickerView.swift */,
 			);
 			path = BaseControllers;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 				0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */,
 				0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */,
 				0AEE48EE1ED72A0200471129 /* OptionsTableViewCell.swift */,
+				0AEE496B1ED90C9D00471129 /* ImageTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 		0ACF0A4B1ED3AA6800EF1609 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0AEE496D1ED91B5F00471129 /* UIView+Loading.swift */,
 				0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */,
 				0ACF0A4D1ED3AA6800EF1609 /* NumberExtensions.swift */,
 				0ACF0A4E1ED3AA6800EF1609 /* String+Quests.swift */,
@@ -443,12 +452,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACF0A351ED312B700EF1609 /* DesignableNavigationBar.swift in Sources */,
+				0AEE496E1ED91B5F00471129 /* UIView+Loading.swift in Sources */,
 				0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */,
 				0ACF0A381ED312B700EF1609 /* DesignableTextView.swift in Sources */,
 				0AEE48E91ED727F100471129 /* MessageTableViewCell.swift in Sources */,
 				0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */,
 				0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */,
 				0AEE48E51ED67BAB00471129 /* UIColor+DayTime.swift in Sources */,
+				0AEE496A1ED90BE000471129 /* MVImagePickerView.swift in Sources */,
 				0A1CFFDB1ED500F8009D9FD3 /* MVLocalNotificationsHelper.swift in Sources */,
 				0ACF0A401ED312B700EF1609 /* QuestContentTextView.swift in Sources */,
 				0ACF0A3F1ED312B700EF1609 /* ParallaxHeaderView.swift in Sources */,
@@ -462,6 +473,7 @@
 				0ACF0A3C1ED312B700EF1609 /* UIViewAnimations.swift in Sources */,
 				0ACF0A571ED3AA6800EF1609 /* StringExtensions.swift in Sources */,
 				0ACF0A371ED312B700EF1609 /* DesignableTextField.swift in Sources */,
+				0AEE496C1ED90C9D00471129 /* ImageTableViewCell.swift in Sources */,
 				0ACF0A581ED3AA6800EF1609 /* UIImageViewExtension.swift in Sources */,
 				0ACF0A441ED3170400EF1609 /* MessageView.swift in Sources */,
 				0ACF0A551ED3AA6800EF1609 /* NumberExtensions.swift in Sources */,

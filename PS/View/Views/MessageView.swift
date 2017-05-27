@@ -14,7 +14,7 @@ let outDuration: Double = 0.5
 let playNotification = Notification.Name(rawValue: "playNotification")
 let pauseNotification = Notification.Name(rawValue: "pauseNotification")
 
-class MessageView: UIView {
+class MessageView: MVImagePickerView {
     
     @IBOutlet weak var messageLabel: UILabel?
     @IBOutlet weak var messageDetailLabel: UILabel!
@@ -25,6 +25,7 @@ class MessageView: UIView {
     var playing: Bool = false
     var shownCallback: (()->Void)?
     var hiddenCallback: (()->Void)?
+    var actionCallback: (()->Void)?
     var message: Message?
     var countdownDate: Date?
     var countdownTimer: Timer?
@@ -51,6 +52,9 @@ class MessageView: UIView {
             index = 2
             break
         case .action:
+            index = 3
+            break
+        case .picture:
             index = 3
             break
         case .enablePush:
@@ -95,6 +99,8 @@ extension MessageView {
         
         self.inputTextField?.placeholder = message?.message
         self.inputTextField?.becomeFirstResponder()
+        self.inputTextField?.returnKeyType = .send
+        self.inputTextField?.delegate = self
         
         self.option1Button?.setTitle(message?.action1, for: .normal)
         self.option2Button?.setTitle(message?.action2, for: .normal)
@@ -161,12 +167,15 @@ extension MessageView: UITextFieldDelegate {
             return false
         }
         
+        self.message?.read = true
+        self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
         self.message?.answer = textField.text
         if let message = message {
             FirebaseHelper.save(message: message)
         }
         
         inputTextField?.resignFirstResponder()
+        hide()
         
         return false
     }
@@ -186,7 +195,11 @@ extension MessageView {
                         self.hide()
                     }
                 })
-            }else {
+            } else if self.message?.type == .picture {
+                self.createAndShowActionSheetToPickImage()
+            } else {
+                self.message?.read = true
+                self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
                 self.message?.answer = self.message?.action1
                 if let message = self.message {
                     FirebaseHelper.save(message: message)
@@ -207,6 +220,26 @@ extension MessageView {
             
             self.hide()
         })
+    }
+}
+
+// MARK:- ImagePickerDelegate
+
+extension MessageView {
+    override func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        super.imagePickerController(picker, didFinishPickingImage: image, editingInfo: editingInfo)
+        
+        // do something with the image
+        FirebaseHelper.upload(loadingView: self, image: image) { (imageUrl) in
+            self.message?.imageUrl = imageUrl
+            self.message?.read = true
+            self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
+            if let message = self.message {
+                FirebaseHelper.save(message: message)
+            }
+            
+            self.hide()
+        }
     }
 }
 
@@ -254,7 +287,6 @@ extension MessageView {
     
 }
 
-
 // MARK: - UIView Extensions
 
 extension UIView {
@@ -266,7 +298,7 @@ extension UIView {
         }
     }
     
-    func showMessageView(message: Message, countdownTo: Date? = nil, shown: (()->Void)? = nil, hidden: (()->Void)? = nil, countdownFinished: (()->Void)? = nil){
+    func showMessageView(message: Message, countdownTo: Date? = nil, shown: (()->Void)? = nil, hidden: (()->Void)? = nil, action: (()->Void)? = nil, countdownFinished: (()->Void)? = nil){
         //hideMessageView()
         
         if let messageView = MessageView.newInstance(type: message.type, isCountdown: countdownTo != nil) {
@@ -275,6 +307,7 @@ extension UIView {
             messageView.countdownFinishedCallback = countdownFinished
             messageView.message = message
             messageView.countdownDate = countdownTo
+            messageView.actionCallback = action
             messageView.frame = self.bounds
             self.addSubview(messageView)
             messageView.show()
