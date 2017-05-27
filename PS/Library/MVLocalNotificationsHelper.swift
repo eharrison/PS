@@ -154,7 +154,7 @@ extension MVNotificationsHelper {
     static func scheduleReminder(withResponse response: UNNotificationResponse, date: Date) {
         print("Rescheduling notification for \(date)")
         
-        var notificationItem = NotificationItem(identifier: response.notification.request.identifier)
+        let notificationItem = NotificationItem(identifier: response.notification.request.identifier)
         
         scheduleNotification(notificationItem)
     }

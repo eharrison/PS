@@ -25,6 +25,10 @@ struct Message {
     var imageUrl: String?
     
     var canShow: Bool {
+        #if Editor
+            return true
+        #endif
+        
         guard let date = date?.toDate(format: "yyyy-MM-dd HH:mm") else {
             return true
         }

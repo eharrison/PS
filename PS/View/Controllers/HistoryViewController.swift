@@ -31,11 +31,15 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
     func filterRead(messages: [Message]) {
         var read = [Message]()
         
-        for message in messages {
-            if message.read {
-                read.append(message)
+        #if Editor
+            read.append(contentsOf: messages)
+        #else
+            for message in messages {
+                if message.read {
+                    read.append(message)
+                }
             }
-        }
+        #endif
         
         self.messages = read
         

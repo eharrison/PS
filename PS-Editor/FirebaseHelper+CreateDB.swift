@@ -17,14 +17,9 @@ extension FirebaseHelper {
         
         // 1 ......
         
-        var date1_1 = "2017-06-05 09:00"
-        #if Editor
-            date1_1 = "2017-05-05 09:00"
-        #endif
-        
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
-                                date: date1_1,
+                                date: "2017-06-05 09:00",
                                 action1: "I'm ready!"))
         
         messages.append(Message(type: .message,
@@ -163,14 +158,9 @@ extension FirebaseHelper {
         
         // 2 ......
         
-        var date1_2 = "2017-06-05 17:00"
-        #if Editor
-            date1_2 = "2017-05-05 17:00"
-        #endif
-        
         messages.append(Message(type: .message,
                                 message: "Hi again!!\nI hope your day was awesome! 😎",
-                                date: date1_2,
+                                date: "2017-06-05 17:00",
                                 timeout: 3))
         
         messages.append(Message(type: .message,
@@ -277,14 +267,9 @@ extension FirebaseHelper {
         
         // 3 ......
         
-        var date2_1 = "2017-06-06 09:00"
-        #if Editor
-            date2_1 = "2017-06-06 17:00"
-        #endif
-        
         messages.append(Message(type: .message,
                                 message: "Good morning!! 🙂",
-                                date: date2_1,
+                                date: "2017-06-06 09:00",
                                 timeout: 2))
         
         messages.append(Message(type: .message,

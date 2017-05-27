@@ -75,7 +75,8 @@ class FirebaseHelper: NSObject {
     /// Uploads file
     ///
     /// - Parameters:
-    ///   - data: File data
+    ///   - loadingView: View for loading indicator
+    ///   - image: Image to upload
     ///   - completion: returns url in a block
     static func upload(loadingView: UIView? = nil, image: UIImage?, completion: ((_ url: String?)->Void)?) {
         guard let image = image, let data = UIImageJPEGRepresentation(image, 1.0) else {

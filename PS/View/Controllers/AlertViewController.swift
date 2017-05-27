@@ -19,6 +19,7 @@ class AlertViewController: UIViewController {
     @IBOutlet weak var okButton: DesignableButton!
     
     var okCallback: (()->Void)?
+    var cancelCallback: (()->Void)?
     var titleString: String?
     var message: String?
     var imageUrl: String?
@@ -71,7 +72,7 @@ class AlertViewController: UIViewController {
         cancelButton.animateTouchDown(halfWay: {
             self.contentView.animateFadeAway()
             self.dismiss(animated: true, completion: {
-                
+                self.cancelCallback?()
             })
         })
     }
@@ -93,8 +94,15 @@ extension UIViewController {
         vc.okCallback = {
             MVNotificationsHelper.enableNotifications(withApplication: UIApplication.shared, callback: { (granted) in
                 didEnablePushNotifications = true
-                callback?()
+                DispatchQueue.main.async {
+                    callback?()
+                }
             })
+        }
+        vc.cancelCallback = {
+            DispatchQueue.main.async {
+                callback?()
+            }
         }
         present(vc, animated: true, completion: nil)
     }

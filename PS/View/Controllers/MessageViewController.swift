@@ -25,6 +25,20 @@ class MessageViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        refreshContent()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(MessageViewController.refreshContent), name: playNotification, object: nil)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func refreshContent(){
+        startedAnimation = false
+        
+        self.contentView.hideMessageView()
+        
         FirebaseHelper.messages({ (messages) in
             if !self.startedAnimation {
                 self.messages = messages
@@ -43,10 +57,6 @@ class MessageViewController: UIViewController {
             self.bottomGradientView.gradientTopColor = UIColor.colorWithTime.withAlphaComponent(0)
             self.bottomGradientView.gradientBottomColor = UIColor.colorWithTime
         }
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
     
     // MARK: - Navigation

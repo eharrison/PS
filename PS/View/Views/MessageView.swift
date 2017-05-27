@@ -123,14 +123,14 @@ extension MessageView {
             
             self.shownCallback?()
             self.updateMessageRead()
-            self.successNotificationFeedback()
+            //self.successNotificationFeedback()
         }
     }
     
     func hide() {
         UIView.animate(withDuration: outDuration, delay: 0, options: .curveEaseIn, animations: {
             self.alpha = 0
-            self.frame.origin.y = -self.frame.size.height
+            //self.frame.origin.y = -self.frame.size.height
         }) { (completed) in
             self.hiddenCallback?()
         }
@@ -152,9 +152,11 @@ extension MessageView {
             return
         }
         
+        #if !Editor
         message.read = true
         message.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
         FirebaseHelper.save(message: message)
+        #endif
     }
 }
 
@@ -167,12 +169,8 @@ extension MessageView: UITextFieldDelegate {
             return false
         }
         
-        self.message?.read = true
-        self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
         self.message?.answer = textField.text
-        if let message = message {
-            FirebaseHelper.save(message: message)
-        }
+        updateMessageRead()
         
         inputTextField?.resignFirstResponder()
         hide()
@@ -191,19 +189,13 @@ extension MessageView {
         sender.animateTouchDown(halfWay: {
             if self.message?.type == .enablePush {
                 AppDelegate.current?.window?.rootViewController?.showEnableNotificationsRequest({
-                    DispatchQueue.main.async {
-                        self.hide()
-                    }
+                    self.hide()
                 })
             } else if self.message?.type == .picture {
                 self.createAndShowActionSheetToPickImage()
             } else {
-                self.message?.read = true
-                self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
                 self.message?.answer = self.message?.action1
-                if let message = self.message {
-                    FirebaseHelper.save(message: message)
-                }
+                self.updateMessageRead()
                 
                 self.hide()
             }
@@ -213,12 +205,8 @@ extension MessageView {
     @IBAction func option2Pressed(_ sender: UIButton) {
         sender.selectionFeedback()
         sender.animateTouchDown(halfWay: {
-            self.message?.read = true
-            self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
             self.message?.answer = self.message?.action2
-            if let message = self.message {
-                FirebaseHelper.save(message: message)
-            }
+            self.updateMessageRead()
             
             self.hide()
         })
@@ -234,11 +222,7 @@ extension MessageView {
         // do something with the image
         FirebaseHelper.upload(loadingView: self, image: image) { (imageUrl) in
             self.message?.imageUrl = imageUrl
-            self.message?.read = true
-            self.message?.readAt = Date().toString(format: "yyyy-MM-dd HH:mm")
-            if let message = self.message {
-                FirebaseHelper.save(message: message)
-            }
+            self.updateMessageRead()
             
             self.hide()
         }
@@ -301,7 +285,7 @@ extension UIView {
     }
     
     func showMessageView(message: Message, countdownTo: Date? = nil, shown: (()->Void)? = nil, hidden: (()->Void)? = nil, action: (()->Void)? = nil, countdownFinished: (()->Void)? = nil){
-        //hideMessageView()
+        hideMessageView()
         
         if let messageView = MessageView.newInstance(type: message.type, isCountdown: countdownTo != nil) {
             messageView.shownCallback = shown
@@ -319,7 +303,7 @@ extension UIView {
     func hideMessageView(){
         for subview in subviews{
             if let subview = subview as? MessageView {
-                subview.hide()
+                subview.removeFromSuperview()
             }
         }
     }
