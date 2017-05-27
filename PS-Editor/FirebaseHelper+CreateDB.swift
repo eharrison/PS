@@ -15,7 +15,7 @@ extension FirebaseHelper {
         
         var messages = [Message]()
         
-        // Day 1 / 1 ......
+        // Day 1 / 1 - 2017-06-05 (Monday)
         /*
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
@@ -156,7 +156,7 @@ extension FirebaseHelper {
                                 message: "Have an awesome day! 😎",
                                 timeout: 2))
         
-        // Day 1 / 2 ......
+        // Day 1 / 2 - 2017-06-05 (Monday)
         
         messages.append(Message(type: .message,
                                 message: "Hi again!!\nI hope your day was awesome! 😎",
@@ -265,7 +265,7 @@ extension FirebaseHelper {
                                 message: "...Brazilian goodbye! 🙂",
                                 timeout: 2))
  
-        // Day 2 / 1 ......
+        // Day 2 / 1 - 2017-06-06 (Tuesday)
         
         messages.append(Message(type: .message,
                                 message: "Good morning!! 🙂",
@@ -397,8 +397,8 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "ok, ok. I'm out! 😅",
                                 timeout: 2))
-        */
-        // Day 3 / 2 ......
+ 
+        // Day 3 / 2 - 2017-06-06 (Tuesday)
         
         messages.append(Message(type: .message,
                                 message: "I'm back!",
@@ -533,8 +533,8 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "🙂",
                                 timeout: 1))
-        
-        // Day 3 / 1 ......
+        */
+        // Day 3 / 1 - 2017-06-07 (Wednesday)
         
         messages.append(Message(type: .message,
                                 message: "доброе утро!!",
@@ -576,11 +576,199 @@ extension FirebaseHelper {
                                 timeout: 2))
         
         messages.append(Message(type: .message,
+                                message: "Ok, so today's mission is...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "to smile",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "to laugh",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "to be happy 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "yes, that's it!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Nothing can bring you down.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Not today.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "because it's an amazing day!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "(even though I'm still not there!) 😁",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "It's all going to be AWESOME!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .action,
+                                message: "right?!",
+                                action1: "RIGHT!! 🙂"))
+        
+        messages.append(Message(type: .message,
+                                message: "Awesome!!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "So go out there, and have an amazing day!",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "✌🏻",
+                                timeout: 2))
+        
+        // Day 3 / 2 - 2017-06-07 (Wednesday)
+        
+        messages.append(Message(type: .message,
                                 message: "",
+                                date: "2017-06-07 17:59",
                                 timeout: 2))
         
         //.........
         
+        // Day 4 / 1 - 2017-06-08 (Thursday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-08 08:58",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 4 / 2 - 2017-06-08 (Thursday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-08 17:58",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 5 / 1 - 2017-06-09 (Friday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-09 09:05",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 5 / 2 - 2017-06-09 (Friday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-09 18:10",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 6 / 1 - 2017-06-10 (Saturday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-10 09:02",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 6 / 2 - 2017-06-10 (Saturday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-10 18:01",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 7 / 1 - 2017-06-11 (Sunday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-11 09:00",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 7 / 2 - 2017-06-11 (Sunday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-11 18:30",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 8 / 1 - 2017-06-12 (Monday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-12 09:01",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 8 / 2 - 2017-06-12 (Monday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-12 18:03",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 9 / 1 - 2017-06-13 (Tuesday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-13 09:01",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 9 / 2 - 2017-06-13 (Tuesday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-13 18:03",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 10 / 1 - 2017-06-14 (Wednesday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-14 09:01",
+                                timeout: 2))
+        
+        //.........
+        
+        // Day 10 / 2 - 2017-06-14 (Tuesday)
+        
+        messages.append(Message(type: .message,
+                                message: "",
+                                date: "2017-06-14 18:03",
+                                timeout: 2))
+        
+        //.........
         
         // Populate database
         var count = 0
