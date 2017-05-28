@@ -637,9 +637,127 @@ extension FirebaseHelper {
         
         // Day 3 / 2 - 2017-06-07 (Wednesday)
         
-        messages.append(Message(type: .message,
-                                message: "",
+        messages.append(Message(type: .action,
+                                message: "Hi! Were you missing me?",
                                 date: "2017-06-07 17:59",
+                                action1: "Yes! 🙂"))
+        
+        messages.append(Message(type: .message,
+                                message: "Yes! I knew you were!!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .options,
+                                message: "Did you have a happy day? 🙂",
+                                action1: "Kinda..",
+                                action2: "Yes!"))
+        
+        messages.append(Message(type: .message,
+                                message: "some days ago we were talking...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "about what we want for the future.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "what you said, is that you just want to be happy. 🙂",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "I guess that's what we all want, right?",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "You know what makes you happy...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "And you probably know what can make you happy starting now...",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "I told you last week...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Actually, I never needed to tell you, you already knew it. 😏",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "...because of the gift and the curse... 😛",
+                                timeout: 3))
+        
+        messages.append(Message(type: .message,
+                                message: "that I'm stuborn and impatient.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "just like you... 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "but perhaps that's not a bad thing...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "perhaps that's what makes us great.",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "even though it doesn't always work out",
+                                timeout: 2.5))
+        
+        messages.append(Message(type: .message,
+                                message: "at least we tried... 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "we should not regret about things we did...",
+                                timeout: 2.5))
+        
+        messages.append(Message(type: .message,
+                                message: "but about things we didn't do.",
+                                timeout: 2.5))
+        
+        messages.append(Message(type: .message,
+                                message: "right? 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "so, I'm not saying we have to jump into something fast...",
+                                timeout: 4))
+        
+        messages.append(Message(type: .message,
+                                message: "but I would like to know...",
+                                timeout: 2))
+        
+        messages.append(Message(type: .options,
+                                message: "Is it ok if I ask you out sometime? 😏",
+                                action1: "Not sure",
+                                action2: "Yes 🙂"))
+        
+        messages.append(Message(type: .message,
+                                message: "Okie dokie! I'll consider it!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "It's been awesome talking to you today! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I wish you an amazing night!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "have fun at the gym! 😛",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Tchau! (goodbye in portuguese)",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "🤗",
                                 timeout: 2))
         
         //.........
@@ -647,7 +765,7 @@ extension FirebaseHelper {
         // Day 4 / 1 - 2017-06-08 (Thursday)
         
         messages.append(Message(type: .message,
-                                message: "",
+                                message: "Bom dia!! 🙂",
                                 date: "2017-06-08 08:58",
                                 timeout: 2))
         
@@ -665,7 +783,7 @@ extension FirebaseHelper {
         // Day 5 / 1 - 2017-06-09 (Friday)
         
         messages.append(Message(type: .message,
-                                message: "",
+                                message: "Howdy!",
                                 date: "2017-06-09 09:05",
                                 timeout: 2))
         
@@ -683,7 +801,7 @@ extension FirebaseHelper {
         // Day 6 / 1 - 2017-06-10 (Saturday)
         
         messages.append(Message(type: .message,
-                                message: "",
+                                message: "Hi, hi! Good morning!! 🙂",
                                 date: "2017-06-10 09:02",
                                 timeout: 2))
         
