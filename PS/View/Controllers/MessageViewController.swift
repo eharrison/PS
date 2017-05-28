@@ -17,17 +17,24 @@ class MessageViewController: UIViewController {
     
     var startedAnimation = false
     var messages = [Message]()
+    var lastHour: Double = 0
+    var sceneTimer: Timer?
+    var dayTime = DayTime.none
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        refreshContent()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         NotificationCenter.default.addObserver(self, selector: #selector(MessageViewController.refreshContent), name: playNotification, object: nil)
+        
+        //update scene timer
+        sceneTimer?.invalidate()
+        sceneTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(MessageViewController.refreshScene), userInfo: nil, repeats: true)
+
+        refreshContent()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -49,14 +56,7 @@ class MessageViewController: UIViewController {
             }
         })
         
-        //change background color based on time
-        UIView.animate(withDuration: 0.3) {
-            self.view.backgroundColor = UIColor.colorWithTime
-            self.topGradientView.gradientTopColor = UIColor.colorWithTime
-            self.topGradientView.gradientBottomColor = UIColor.colorWithTime.withAlphaComponent(0)
-            self.bottomGradientView.gradientTopColor = UIColor.colorWithTime.withAlphaComponent(0)
-            self.bottomGradientView.gradientBottomColor = UIColor.colorWithTime
-        }
+        refreshScene()
     }
     
     // MARK: - Navigation
@@ -103,4 +103,69 @@ class MessageViewController: UIViewController {
             })
         }
     }
+}
+
+// MARK: -  Scene
+
+enum DayTime {
+    case none
+    case day
+    case night
+}
+
+extension MessageViewController {
+    
+    func refreshScene() {
+        //Current time
+        let hour = Int(Date().toString(format: "HH")) ?? 8
+        let minutes = Int(Date().toString(format: "mm")) ?? 0
+        let time = Double(hour) + Double(minutes/60)
+        
+        guard lastHour != Double(hour) else {
+            return
+        }
+        
+        lastHour = Double(hour)
+        
+        //testing
+        /*
+        let time = lastHour+1
+        lastHour = time
+        if lastHour > 23 {
+            lastHour = 0
+        }
+        print(time)*/
+        
+        //change background color based on time
+        let colorWithTime = UIColor.color(withHour: time)
+        UIView.animate(withDuration: 0.3) {
+            self.view.backgroundColor = colorWithTime
+            self.topGradientView.gradientTopColor = colorWithTime
+            self.topGradientView.gradientBottomColor = colorWithTime.withAlphaComponent(0)
+            self.bottomGradientView.gradientTopColor = colorWithTime.withAlphaComponent(0)
+            self.bottomGradientView.gradientBottomColor = colorWithTime
+        }
+        
+        // adds components based on time
+        if time >= 6 && time <= 18 {
+            if dayTime != .day {
+                self.contentView.hideMoon()
+                self.contentView.hideStar()
+                
+                self.contentView.showSun()
+            }
+            
+            dayTime = .day
+        } else {
+            if dayTime != .night {
+                self.contentView.hideSun()
+                
+                self.contentView.showStars(count: 20)
+                self.contentView.showMoon()
+            }
+            
+            dayTime = .night
+        }
+    }
+    
 }

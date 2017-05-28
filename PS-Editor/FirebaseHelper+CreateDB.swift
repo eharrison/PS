@@ -536,6 +536,8 @@ extension FirebaseHelper {
         */
         // Day 3 / 1 - 2017-06-07 (Wednesday)
         
+        ///////// IF TODAY WAS YOUR LAST DAY!!! - NICKLEBACK
+        
         messages.append(Message(type: .message,
                                 message: "доброе утро!!",
                                 date: "2017-06-07 09:02",

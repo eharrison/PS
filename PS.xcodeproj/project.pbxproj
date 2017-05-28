@@ -31,8 +31,6 @@
 		0ACF0A3F1ED312B700EF1609 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A301ED312B700EF1609 /* ParallaxHeaderView.swift */; };
 		0ACF0A401ED312B700EF1609 /* QuestContentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A311ED312B700EF1609 /* QuestContentTextView.swift */; };
 		0ACF0A421ED314D100EF1609 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A411ED314D100EF1609 /* MessageViewController.swift */; };
-		0ACF0A441ED3170400EF1609 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A431ED3170400EF1609 /* MessageView.swift */; };
-		0ACF0A461ED3182B00EF1609 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A451ED3182B00EF1609 /* MessageView.xib */; };
 		0ACF0A481ED3252800EF1609 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A471ED3252800EF1609 /* GoogleService-Info.plist */; };
 		0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */; };
 		0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */; };
@@ -43,6 +41,24 @@
 		0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */; };
 		0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */; };
 		0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A5C1ED4849D00EF1609 /* Message.swift */; };
+		0ACFD9941EDB017E00E4077F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9921EDB017E00E4077F /* MessageView.swift */; };
+		0ACFD9951EDB017E00E4077F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9921EDB017E00E4077F /* MessageView.swift */; };
+		0ACFD9961EDB017E00E4077F /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9931EDB017E00E4077F /* MessageView.xib */; };
+		0ACFD9971EDB017E00E4077F /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9931EDB017E00E4077F /* MessageView.xib */; };
+		0ACFD9B01EDB143E00E4077F /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9A81EDB143E00E4077F /* Moon.swift */; };
+		0ACFD9B11EDB143E00E4077F /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9A81EDB143E00E4077F /* Moon.swift */; };
+		0ACFD9B21EDB143E00E4077F /* Moon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9A91EDB143E00E4077F /* Moon.xib */; };
+		0ACFD9B31EDB143E00E4077F /* Moon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9A91EDB143E00E4077F /* Moon.xib */; };
+		0ACFD9B41EDB143E00E4077F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AB1EDB143E00E4077F /* Star.swift */; };
+		0ACFD9B51EDB143E00E4077F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AB1EDB143E00E4077F /* Star.swift */; };
+		0ACFD9B61EDB143E00E4077F /* Star.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AC1EDB143E00E4077F /* Star.xib */; };
+		0ACFD9B71EDB143E00E4077F /* Star.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AC1EDB143E00E4077F /* Star.xib */; };
+		0ACFD9B81EDB143E00E4077F /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AE1EDB143E00E4077F /* Sun.swift */; };
+		0ACFD9B91EDB143E00E4077F /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AE1EDB143E00E4077F /* Sun.swift */; };
+		0ACFD9BA1EDB143E00E4077F /* Sun.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AF1EDB143E00E4077F /* Sun.xib */; };
+		0ACFD9BB1EDB143E00E4077F /* Sun.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACFD9AF1EDB143E00E4077F /* Sun.xib */; };
+		0ACFD9BD1EDB146200E4077F /* SceneComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9BC1EDB146200E4077F /* SceneComponent.swift */; };
+		0ACFD9BE1EDB146200E4077F /* SceneComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD9BC1EDB146200E4077F /* SceneComponent.swift */; };
 		0AEE48E51ED67BAB00471129 /* UIColor+DayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E41ED67BAB00471129 /* UIColor+DayTime.swift */; };
 		0AEE48E71ED7276000471129 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E61ED7276000471129 /* HistoryViewController.swift */; };
 		0AEE48E91ED727F100471129 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */; };
@@ -86,8 +102,6 @@
 		0AEE49A41ED9661100471129 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A411ED314D100EF1609 /* MessageViewController.swift */; };
 		0AEE49A51ED9661100471129 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E61ED7276000471129 /* HistoryViewController.swift */; };
 		0AEE49A61ED9661100471129 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CFFE01ED5070C009D9FD3 /* AlertViewController.swift */; };
-		0AEE49A71ED9661400471129 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF0A431ED3170400EF1609 /* MessageView.swift */; };
-		0AEE49A81ED9661400471129 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACF0A451ED3182B00EF1609 /* MessageView.xib */; };
 		0AEE49A91ED9661800471129 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */; };
 		0AEE49AA1ED9661800471129 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EA1ED729EE00471129 /* InputTableViewCell.swift */; };
 		0AEE49AB1ED9661800471129 /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE48EC1ED729F500471129 /* ActionTableViewCell.swift */; };
@@ -129,8 +143,6 @@
 		0ACF0A301ED312B700EF1609 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
 		0ACF0A311ED312B700EF1609 /* QuestContentTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestContentTextView.swift; sourceTree = "<group>"; };
 		0ACF0A411ED314D100EF1609 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		0ACF0A431ED3170400EF1609 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		0ACF0A451ED3182B00EF1609 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		0ACF0A471ED3252800EF1609 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0ACF0A491ED3280B00EF1609 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		0ACF0A4C1ED3AA6800EF1609 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
@@ -141,6 +153,15 @@
 		0ACF0A511ED3AA6800EF1609 /* UITextInput+Quests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextInput+Quests.swift"; sourceTree = "<group>"; };
 		0ACF0A521ED3AA6800EF1609 /* UIView+Parallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Parallax.swift"; sourceTree = "<group>"; };
 		0ACF0A5C1ED4849D00EF1609 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0ACFD9921EDB017E00E4077F /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		0ACFD9931EDB017E00E4077F /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		0ACFD9A81EDB143E00E4077F /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		0ACFD9A91EDB143E00E4077F /* Moon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Moon.xib; sourceTree = "<group>"; };
+		0ACFD9AB1EDB143E00E4077F /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		0ACFD9AC1EDB143E00E4077F /* Star.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Star.xib; sourceTree = "<group>"; };
+		0ACFD9AE1EDB143E00E4077F /* Sun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
+		0ACFD9AF1EDB143E00E4077F /* Sun.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Sun.xib; sourceTree = "<group>"; };
+		0ACFD9BC1EDB146200E4077F /* SceneComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneComponent.swift; sourceTree = "<group>"; };
 		0AEE48E41ED67BAB00471129 /* UIColor+DayTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DayTime.swift"; sourceTree = "<group>"; };
 		0AEE48E61ED7276000471129 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0AEE48E81ED727F100471129 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
@@ -308,8 +329,8 @@
 		0ACF0A1F1ED3111300EF1609 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0ACF0A431ED3170400EF1609 /* MessageView.swift */,
-				0ACF0A451ED3182B00EF1609 /* MessageView.xib */,
+				0ACFD9A61EDB143E00E4077F /* Scene */,
+				0ACFD9911EDB017E00E4077F /* Message */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +387,53 @@
 				0AEE48E41ED67BAB00471129 /* UIColor+DayTime.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0ACFD9911EDB017E00E4077F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0ACFD9921EDB017E00E4077F /* MessageView.swift */,
+				0ACFD9931EDB017E00E4077F /* MessageView.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		0ACFD9A61EDB143E00E4077F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0ACFD9BC1EDB146200E4077F /* SceneComponent.swift */,
+				0ACFD9AA1EDB143E00E4077F /* Star */,
+				0ACFD9A71EDB143E00E4077F /* Moon */,
+				0ACFD9AD1EDB143E00E4077F /* Sun */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		0ACFD9A71EDB143E00E4077F /* Moon */ = {
+			isa = PBXGroup;
+			children = (
+				0ACFD9A81EDB143E00E4077F /* Moon.swift */,
+				0ACFD9A91EDB143E00E4077F /* Moon.xib */,
+			);
+			path = Moon;
+			sourceTree = "<group>";
+		};
+		0ACFD9AA1EDB143E00E4077F /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				0ACFD9AB1EDB143E00E4077F /* Star.swift */,
+				0ACFD9AC1EDB143E00E4077F /* Star.xib */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		0ACFD9AD1EDB143E00E4077F /* Sun */ = {
+			isa = PBXGroup;
+			children = (
+				0ACFD9AE1EDB143E00E4077F /* Sun.swift */,
+				0ACFD9AF1EDB143E00E4077F /* Sun.xib */,
+			);
+			path = Sun;
 			sourceTree = "<group>";
 		};
 		0AEE49741ED9658B00471129 /* PS-Editor */ = {
@@ -487,10 +555,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACF0A461ED3182B00EF1609 /* MessageView.xib in Resources */,
 				0ACF0A191ED3108800EF1609 /* Main.storyboard in Resources */,
 				0ACF0A481ED3252800EF1609 /* GoogleService-Info.plist in Resources */,
+				0ACFD9B21EDB143E00E4077F /* Moon.xib in Resources */,
+				0ACFD9B61EDB143E00E4077F /* Star.xib in Resources */,
 				0ACF0A171ED3108800EF1609 /* Assets.xcassets in Resources */,
+				0ACFD9961EDB017E00E4077F /* MessageView.xib in Resources */,
+				0ACFD9BA1EDB143E00E4077F /* Sun.xib in Resources */,
 				0ACF0A181ED3108800EF1609 /* LaunchScreen.storyboard in Resources */,
 				0A1CFFDF1ED505BD009D9FD3 /* Alerts.storyboard in Resources */,
 			);
@@ -500,10 +571,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AEE49A81ED9661400471129 /* MessageView.xib in Resources */,
 				0AEE49B01ED9663C00471129 /* Main.storyboard in Resources */,
 				0AEE49AF1ED9663600471129 /* LaunchScreen.storyboard in Resources */,
+				0ACFD9B31EDB143E00E4077F /* Moon.xib in Resources */,
+				0ACFD9B71EDB143E00E4077F /* Star.xib in Resources */,
 				0AEE49AE1ED9662000471129 /* Assets.xcassets in Resources */,
+				0ACFD9971EDB017E00E4077F /* MessageView.xib in Resources */,
+				0ACFD9BB1EDB143E00E4077F /* Sun.xib in Resources */,
 				0AEE49851ED965EF00471129 /* GoogleService-Info.plist in Resources */,
 				0AEE49B11ED9663F00471129 /* Alerts.storyboard in Resources */,
 			);
@@ -611,8 +685,11 @@
 			files = (
 				0ACF0A351ED312B700EF1609 /* DesignableNavigationBar.swift in Sources */,
 				0AEE496E1ED91B5F00471129 /* UIView+Loading.swift in Sources */,
+				0ACFD9BD1EDB146200E4077F /* SceneComponent.swift in Sources */,
+				0ACFD9B81EDB143E00E4077F /* Sun.swift in Sources */,
 				0ACF0A541ED3AA6800EF1609 /* DateExtensions.swift in Sources */,
 				0ACF0A381ED312B700EF1609 /* DesignableTextView.swift in Sources */,
+				0ACFD9941EDB017E00E4077F /* MessageView.swift in Sources */,
 				0AEE48E91ED727F100471129 /* MessageTableViewCell.swift in Sources */,
 				0ACF0A5A1ED3AA6800EF1609 /* UIView+Parallax.swift in Sources */,
 				0ACF0A4A1ED3280B00EF1609 /* FirebaseHelper.swift in Sources */,
@@ -630,15 +707,16 @@
 				0AEE48EB1ED729EE00471129 /* InputTableViewCell.swift in Sources */,
 				0ACF0A3C1ED312B700EF1609 /* UIViewAnimations.swift in Sources */,
 				0ACF0A571ED3AA6800EF1609 /* StringExtensions.swift in Sources */,
+				0ACFD9B41EDB143E00E4077F /* Star.swift in Sources */,
 				0ACF0A371ED312B700EF1609 /* DesignableTextField.swift in Sources */,
 				0AEE496C1ED90C9D00471129 /* ImageTableViewCell.swift in Sources */,
 				0ACF0A581ED3AA6800EF1609 /* UIImageViewExtension.swift in Sources */,
-				0ACF0A441ED3170400EF1609 /* MessageView.swift in Sources */,
 				0ACF0A551ED3AA6800EF1609 /* NumberExtensions.swift in Sources */,
 				0ACF0A3E1ED312B700EF1609 /* UIViewExtensions.swift in Sources */,
 				0ACF0A361ED312B700EF1609 /* DesignableProgressView.swift in Sources */,
 				0ACF0A341ED312B700EF1609 /* DesignableLabel.swift in Sources */,
 				0A1CFFD91ED4FCB4009D9FD3 /* MVFeedbackHelper.swift in Sources */,
+				0ACFD9B01EDB143E00E4077F /* Moon.swift in Sources */,
 				0ACF0A5D1ED4849D00EF1609 /* Message.swift in Sources */,
 				0ACF0A591ED3AA6800EF1609 /* UITextInput+Quests.swift in Sources */,
 				0AEE48ED1ED729F500471129 /* ActionTableViewCell.swift in Sources */,
@@ -657,9 +735,13 @@
 			files = (
 				0AEE49A01ED9660900471129 /* FirebaseHelper.swift in Sources */,
 				0AEE498E1ED965F700471129 /* UITextInput+Quests.swift in Sources */,
+				0ACFD9B91EDB143E00E4077F /* Sun.swift in Sources */,
 				0AEE49961ED965FC00471129 /* DesignableTextField.swift in Sources */,
+				0ACFD9B51EDB143E00E4077F /* Star.swift in Sources */,
+				0ACFD9951EDB017E00E4077F /* MessageView.swift in Sources */,
 				0AEE49971ED965FC00471129 /* DesignableTextView.swift in Sources */,
 				0AEE49951ED965FC00471129 /* DesignableProgressView.swift in Sources */,
+				0ACFD9BE1EDB146200E4077F /* SceneComponent.swift in Sources */,
 				0AEE498C1ED965F700471129 /* StringExtensions.swift in Sources */,
 				0AEE49871ED965F300471129 /* MVFeedbackHelper.swift in Sources */,
 				0AEE498F1ED965F700471129 /* UIView+Parallax.swift in Sources */,
@@ -670,6 +752,7 @@
 				0AEE49921ED965FC00471129 /* DesignableImageView.swift in Sources */,
 				0AEE49A31ED9660E00471129 /* MVImagePickerView.swift in Sources */,
 				0AEE49861ED965F300471129 /* MVLocalNotificationsHelper.swift in Sources */,
+				0ACFD9B11EDB143E00E4077F /* Moon.swift in Sources */,
 				0AEE498D1ED965F700471129 /* UIImageViewExtension.swift in Sources */,
 				0AEE49AA1ED9661800471129 /* InputTableViewCell.swift in Sources */,
 				0AEE49AD1ED9661800471129 /* ImageTableViewCell.swift in Sources */,
@@ -677,7 +760,6 @@
 				0AEE498A1ED965F700471129 /* NumberExtensions.swift in Sources */,
 				0AEE49991ED9660100471129 /* NSNumberExtensions.swift in Sources */,
 				0AEE499C1ED9660100471129 /* UIViewControllerExtensions.swift in Sources */,
-				0AEE49A71ED9661400471129 /* MessageView.swift in Sources */,
 				0AEE49931ED965FC00471129 /* DesignableLabel.swift in Sources */,
 				0AEE49941ED965FC00471129 /* DesignableNavigationBar.swift in Sources */,
 				0AEE49901ED965F700471129 /* UIColor+DayTime.swift in Sources */,
@@ -827,6 +909,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.itsdayoff.PS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -842,6 +925,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.itsdayoff.PS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -857,6 +941,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itsdayoff.PS-Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -872,6 +957,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itsdayoff.PS-Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
