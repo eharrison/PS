@@ -821,9 +821,11 @@ extension FirebaseHelper {
         // Day 7 / 1 - 2017-06-11 (Sunday)
         
         messages.append(Message(type: .message,
-                                message: "",
+                                message: "Hello again!! 🙂",
                                 date: "2017-06-11 09:00",
                                 timeout: 2))
+        
+        //easy like sunday morning
         
         //.........
         

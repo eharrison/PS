@@ -116,11 +116,20 @@ enum DayTime {
 extension MessageViewController {
     
     func refreshScene() {
+        
         //Current time
         let hour = Int(Date().toString(format: "HH")) ?? 8
         let minutes = Int(Date().toString(format: "mm")) ?? 0
         let time = Double(hour) + Double(minutes/60)
         
+        //shooting stars
+        if time < 6 || time > 18 {
+            self.contentView.shootStar({ 
+                Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(self.refreshScene), userInfo: nil, repeats: false)
+            })
+        }
+        
+        //if hour did not change, do not continue
         guard lastHour != Double(hour) else {
             return
         }
@@ -163,10 +172,6 @@ extension MessageViewController {
                 self.contentView.showStars(count: 20)
                 self.contentView.showMoon()
             }
-            
-            self.contentView.shootStar({
-                
-            })
             
             dayTime = .night
         }
