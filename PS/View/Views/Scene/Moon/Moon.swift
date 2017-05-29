@@ -25,10 +25,15 @@ class Moon: SceneComponent {
         self.center = CGPoint(x: superviewFrame.size.width+self.frame.size.width/2, y: superviewFrame.size.height/2)
         
         UIView.animate(withDuration: animationTime, delay: 0, options: .curveEaseOut, animations: {
+            
             self.alpha = 1
             self.center = CGPoint(x: superviewFrame.size.width/2, y: self.frame.size.height)
         }) { (completed) in
-            
+            self.pulseAnimationTime = 2
+            self.pulseNormalScale = 1.0
+            self.pulseMaxScale = 1.02
+            self.pulse()
+            self.pulseTimer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(Moon.pulse), userInfo: nil, repeats: true)
         }
     }
     
