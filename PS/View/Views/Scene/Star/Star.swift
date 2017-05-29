@@ -37,6 +37,33 @@ class Star: SceneComponent {
         }
     }
     
+    func shootingStar(animationTime: Double, completion: (()->Void)?) {
+        let superviewFrame = self.superview?.frame ?? CGRect()
+        
+        self.isHidden = false
+        
+        var startPoint = CGPoint(x: CGFloat(arc4random()).truncatingRemainder(dividingBy: superviewFrame.size.width), y: CGFloat(arc4random()).truncatingRemainder(dividingBy: superviewFrame.size.height))
+        if startPoint.x > superviewFrame.size.width/2 {
+            startPoint.x = superviewFrame.size.width+self.frame.size.width
+        }else{
+            startPoint.x = -self.frame.size.width
+        }
+        let endPoint = CGPoint(x: startPoint.x < 0 ? superviewFrame.size.width+self.frame.size.width : -self.frame.size.width, y: CGFloat(arc4random()).truncatingRemainder(dividingBy: superviewFrame.size.height))
+        
+        self.center = startPoint
+        
+        let scale = 1/CGFloat(arc4random()).truncatingRemainder(dividingBy: 10)
+        self.transform = CGAffineTransform(scaleX: scale, y: scale)
+        
+        UIView.animate(withDuration: animationTime, delay: 3, options: .curveLinear, animations: {
+            self.alpha = 1
+            self.center = endPoint
+        }) { (completed) in
+            self.removeFromSuperview()
+            completion?()
+        }
+    }
+    
 }
 
 // MARK: - UIView Extensions
@@ -55,6 +82,13 @@ extension UIView {
         if let star = Star.newStar() {
             self.addSubview(star)
             star.show()
+        }
+    }
+    
+    func shootStar(_ completion: (()->Void)?){
+        if let star = Star.newStar() {
+            self.addSubview(star)
+            star.shootingStar(animationTime: Double(arc4random()).truncatingRemainder(dividingBy: 10.0), completion: completion)
         }
     }
     

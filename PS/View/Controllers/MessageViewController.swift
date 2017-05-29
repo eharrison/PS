@@ -164,6 +164,10 @@ extension MessageViewController {
                 self.contentView.showMoon()
             }
             
+            self.contentView.shootStar({
+                
+            })
+            
             dayTime = .night
         }
     }
