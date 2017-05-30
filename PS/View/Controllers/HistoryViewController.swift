@@ -14,6 +14,9 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var messages = [Message]()
+    var lastHour: Double = 0
+    var sceneTimer: Timer?
+    var dayTime = DayTime.none
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,14 @@ class HistoryViewController: UIViewController {
             self.filterRead(messages: messages)
             Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(HistoryViewController.scrollToLast), userInfo: nil, repeats: false)
         })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        refreshScene()
     }
 }
 
@@ -100,6 +111,53 @@ extension HistoryViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+    
+}
+
+// MARK: -  Scene
+
+extension HistoryViewController {
+    
+    func refreshScene() {
+        
+        //Current time
+        let hour = Int(Date().toString(format: "HH")) ?? 8
+        let minutes = Int(Date().toString(format: "mm")) ?? 0
+        let time = Double(hour) + Double(minutes/60)
+        
+        //shooting stars
+        if time < 6 || time > 18 {
+            self.view.shootStar({
+                Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(self.refreshScene), userInfo: nil, repeats: false)
+            })
+        }
+        
+        //if hour did not change, do not continue
+        guard lastHour != Double(hour) else {
+            return
+        }
+        
+        lastHour = Double(hour)
+        
+        //change background color based on time
+        let colorWithTime = UIColor.color(withHour: time)
+        self.view.backgroundColor = colorWithTime
+        
+        // adds components based on time
+        if time >= 6 && time <= 18 {
+            if dayTime != .day {
+                self.view.hideStar()
+            }
+            
+            dayTime = .day
+        } else {
+            if dayTime != .night {
+                self.view.showStars(count: 20)
+            }
+            
+            dayTime = .night
+        }
     }
     
 }

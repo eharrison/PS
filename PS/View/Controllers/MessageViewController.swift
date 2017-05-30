@@ -36,6 +36,12 @@ class MessageViewController: UIViewController {
         })
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -86,7 +92,7 @@ class MessageViewController: UIViewController {
                 }
             }else{
                 //not time for message yet
-                self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\n\nNext message will come in:"), countdownTo: message.date?.toDate(format: "yyyy-MM-dd HH:mm"), shown:{
+                self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\nNext message will come in:"), countdownTo: message.date?.toDate(format: "yyyy-MM-dd HH:mm"), shown:{
                     
                 }, hidden:{
                     
