@@ -129,7 +129,7 @@ extension FirebaseHelper {
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "👨🏻‍🌾",
+                                message: "🙂",
                                 timeout: 1))
         
         messages.append(Message(type: .message,

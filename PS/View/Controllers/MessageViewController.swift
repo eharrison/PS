@@ -23,6 +23,17 @@ class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FirebaseHelper.messages({ (messages) in
+            if !self.startedAnimation {
+                self.messages = messages
+                self.nextMessage()
+                
+                MVNotificationsHelper.setupNotifications(withMessages: messages)
+            }
+            
+            self.startedAnimation = true
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,18 +55,6 @@ class MessageViewController: UIViewController {
     func refreshContent(){
         startedAnimation = false
         
-        self.contentView.hideMessageView()
-        
-        FirebaseHelper.messages({ (messages) in
-            if !self.startedAnimation {
-                self.messages = messages
-                self.nextMessage()
-                self.startedAnimation = true
-                
-                MVNotificationsHelper.setupNotifications(withMessages: messages)
-            }
-        })
-        
         refreshScene()
     }
     
@@ -68,6 +67,8 @@ class MessageViewController: UIViewController {
     // MARK: - Animations
     
     private func nextMessage() {
+        self.contentView.hideMessageView()
+        
         if let message = messages.first {
             if message.canShow {
                 messages.removeFirst()
@@ -161,7 +162,7 @@ extension MessageViewController {
                 self.contentView.hideMoon()
                 self.contentView.hideStar()
                 
-                self.contentView.showSun()
+                self.contentView.showSun(time: time)
             }
             
             dayTime = .day

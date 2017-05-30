@@ -10,8 +10,8 @@ import UIKit
 
 class Sun: SceneComponent {
     
-    static func newSun() -> Sun?{
-        return Bundle(for: self).loadNibNamed("Sun", owner: self, options: nil)![0] as? Sun
+    static func newSun(level: Int) -> Sun?{
+        return Bundle(for: self).loadNibNamed("Sun", owner: self, options: nil)![level] as? Sun
     }
     
     // MARK: - Animations
@@ -46,10 +46,21 @@ class Sun: SceneComponent {
 
 extension UIView {
     
-    func showSun(){
+    func showSun(time: Double){
         hideSun()
         
-        if let sun = Sun.newSun() {
+        var sunLevel = 0
+        if time >= 6 && time < 8 {
+            sunLevel = 0
+        } else if time >= 8 && time < 16 {
+            sunLevel = 1
+        } else if time >= 16 && time < 17 {
+            sunLevel = 2
+        } else if time >= 17 && time < 18 {
+            sunLevel = 3
+        }
+        
+        if let sun = Sun.newSun(level: sunLevel) {
             self.addSubview(sun)
             sun.show()
         }
