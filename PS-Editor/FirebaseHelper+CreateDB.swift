@@ -16,7 +16,7 @@ extension FirebaseHelper {
         var messages = [Message]()
         
         // Day 1 / 1 - 2017-06-05 (Monday)
-        /*
+        
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
                                 action1: "I'm ready!"))
@@ -533,10 +533,8 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "🙂",
                                 timeout: 1))
-        */
-        // Day 3 / 1 - 2017-06-07 (Wednesday)
         
-        ///////// IF TODAY WAS YOUR LAST DAY!!! - NICKLEBACK
+        // Day 3 / 1 - 2017-06-07 (Wednesday)
         
         messages.append(Message(type: .message,
                                 message: "доброе утро!!",
@@ -632,6 +630,10 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "🙂",
                                 timeout: 2))
+        
+        messages.append(Message(type: .action,
+                                message: "Oh, and listen to\n`IF TODAY WAS YOUR LAST DAY!!! - NICKLEBACK`.",
+                                action1: "Ok!! 😎"))
         
         messages.append(Message(type: .message,
                                 message: "✌🏻",
