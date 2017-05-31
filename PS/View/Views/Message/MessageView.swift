@@ -122,12 +122,14 @@ extension MessageView {
             }
             
             self.shownCallback?()
-            self.updateMessageRead()
+            //self.updateMessageRead()
             //self.successNotificationFeedback()
         }
     }
     
     func hide() {
+        self.updateMessageRead()
+        
         UIView.animate(withDuration: outDuration, delay: 0, options: .curveEaseIn, animations: {
             self.alpha = 0
             //self.frame.origin.y = -self.frame.size.height

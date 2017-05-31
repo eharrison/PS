@@ -27,6 +27,15 @@ class MessageViewController: UIViewController {
         FirebaseHelper.messages({ (messages) in
             if !self.startedAnimation {
                 self.messages = messages
+                
+                //clear read messages
+                self.messages.removeAll()
+                for message in messages {
+                    if !message.read {
+                        self.messages.append(message)
+                    }
+                }
+                
                 self.nextMessage()
                 
                 MVNotificationsHelper.setupNotifications(withMessages: messages)
@@ -59,7 +68,7 @@ class MessageViewController: UIViewController {
     }
     
     func refreshContent(){
-        startedAnimation = false
+        //startedAnimation = false
         
         refreshScene()
     }
@@ -76,20 +85,22 @@ class MessageViewController: UIViewController {
         self.contentView.hideMessageView()
         
         if let message = messages.first {
+            print("Messages left: \(messages.count)")
+            
             if message.canShow {
                 messages.removeFirst()
                 
-                //date has arrived
-                if message.read {
-                    //already read, go to next message
-                    self.nextMessage()
-                }else{
+//                //date has arrived
+//                if message.read {
+//                    //already read, go to next message
+//                    self.nextMessage()
+//                }else{
                     self.contentView.showMessageView(message: message, shown:{
                         
                     }, hidden:{
                         self.nextMessage()
                     })
-                }
+//                }
             }else{
                 //not time for message yet
                 self.contentView.showMessageView(message: Message(type: .message, message: "Be patient! 😊\nNext message will come in:"), countdownTo: message.date?.toDate(format: "yyyy-MM-dd HH:mm"), shown:{

@@ -357,7 +357,7 @@ extension FirebaseHelper {
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "Awesome!?",
+                                message: "классно!?",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
