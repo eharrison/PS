@@ -24,9 +24,19 @@ extension UIColor {
     
     static func color(withHour hour: Double) -> UIColor {
         switch hour {
-        case 6...8:
+        case 5...5.5:
+            return rgbColor(42, 140, 248, 0.2)
+        case 5.5...6:
+            return rgbColor(42, 140, 248, 0.4)
+        case 6...6.5:
+            return rgbColor(42, 140, 248, 0.6)
+        case 6.5...7:
+            return rgbColor(42, 140, 248, 0.6)
+        case 7...7.5:
+            return rgbColor(42, 140, 248, 0.8)
+        case 7.5...10:
             return rgbColor(42, 140, 248, 1)
-        case 8...17:
+        case 10...17:
             return rgbColor(42, 140, 248, 0.8)
         case 17...18:
             return rgbColor(42, 140, 248, 0.6)

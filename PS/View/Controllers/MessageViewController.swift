@@ -141,7 +141,7 @@ extension MessageViewController {
         let time = Double(hour) + Double(minutes/60)
         
         //shooting stars
-        if time < 6 || time > 18 {
+        if time < 7 || time > 18 {
             self.contentView.shootStar({ 
                 Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(self.refreshScene), userInfo: nil, repeats: false)
             })
@@ -174,7 +174,7 @@ extension MessageViewController {
         }
         
         // adds components based on time
-        if time >= 6 && time <= 18 {
+        if time >= 7.5 && time <= 18 {
             if dayTime != .day {
                 self.contentView.hideMoon()
                 self.contentView.hideStar()

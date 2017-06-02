@@ -17,6 +17,22 @@ extension FirebaseHelper {
         
         // Day 1 / 1 - 2017-06-05 (Monday)
         
+        messages.append(Message(type: .message,
+                                message: "Hi! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Great to see you!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "This is going to be so cool!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "I mean, классно! ☺️",
+                                timeout: 2))
+        
         messages.append(Message(type: .enablePush,
                                 message: "Let me know when you are ready! 🙂",
                                 action1: "I'm ready!"))
@@ -71,7 +87,7 @@ extension FirebaseHelper {
                                 timeout: 1))
         
         messages.append(Message(type: .message,
-                                message: "BTW, I do you want me to speak Russian?",
+                                message: "BTW, I do you want me to speak русски?",
                                 timeout: 2))
         
         messages.append(Message(type: .options,
@@ -80,7 +96,7 @@ extension FirebaseHelper {
                                 action2: "Yes"))
 
         messages.append(Message(type: .message,
-                                message: "Just kidding! I can't... 😂",
+                                message: "Just kidding! Not your choice... 😂",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
@@ -195,9 +211,8 @@ extension FirebaseHelper {
                                 message: "Don't worry, it's easy...",
                                 timeout: 2))
         
-        // TODO: - ACTION REQUIRED!!!
         messages.append(Message(type: .action,
-                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you.\nOnly continue if you already picked it up! No cheating!! 🙂",
+                                message: "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you. 🙂\nOnly continue if you already picked it up! No cheating!! 🙂",
                                 action1: "I have it!"))
         
         messages.append(Message(type: .action,
@@ -680,7 +695,7 @@ extension FirebaseHelper {
                                 timeout: 4))
         
         messages.append(Message(type: .message,
-                                message: "I told you last week...",
+                                message: "I told you before...",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
@@ -746,6 +761,14 @@ extension FirebaseHelper {
         
         messages.append(Message(type: .message,
                                 message: "It's been awesome talking to you today! 🙂",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Yes, Awesome!",
+                                timeout: 2))
+        
+        messages.append(Message(type: .message,
+                                message: "Your favourite word! 🙂",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
