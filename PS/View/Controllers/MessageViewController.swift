@@ -174,7 +174,7 @@ extension MessageViewController {
         }
         
         // adds components based on time
-        if time >= 7.5 && time <= 18 {
+            if time >= 7.5 && time <= 18 {
             if dayTime != .day {
                 self.contentView.hideMoon()
                 self.contentView.hideStar()
