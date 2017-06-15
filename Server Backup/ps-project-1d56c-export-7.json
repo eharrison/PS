@@ -1,0 +1,2955 @@
+{
+  "messages" : [ {
+    "action" : "none",
+    "message" : "Hi! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-02 10:01",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Great to see you!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-02 10:01",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "This is going to be so cool!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-02 10:01",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I mean, классно! ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-02 10:01",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "I'm ready!",
+    "message" : "Let me know when you are ready! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-02 10:01",
+    "timeout" : 0,
+    "type" : "enablePush",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-05 09:02",
+    "message" : "Hi! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's a great day! Isn't it?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...or at least we can make it a great day! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "What do you think?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I have a plan!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But before... I have a question...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Because I can't seem to remember... 😅",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "What is... your name again?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Your name...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Oh, I just remembered!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:02",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ириночка!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "BTW, I do you want me to speak русски?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No",
+    "action2" : "Yes",
+    "answer" : "Yes",
+    "message" : "Speak Russian",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Just kidding! Not your choice... 😂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Anyways... back to the plan!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "hmmmm...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Actually, I won't tell you! 😏",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...I'll give you some clues instead.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...but, you gotta promise to not cheat! 🤓",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No",
+    "action2" : "Yes",
+    "answer" : "Yes",
+    "message" : "deal?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I'll believe you! 🙃",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok, so here's the plan...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I'll give you a few missions.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "YES, MISSIONS!!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "just felt important, right?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "ok... MISSION 1",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Done!",
+    "answer" : "Done!",
+    "message" : "At my desk, by the window, there is something wrapped in newspaper. Get it, and put it on your bag (you might need it later. Exciting, right? 🙂).\nPS. you can get a chocolate from the can too! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:36",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Awesome!!\nYou just finished your first mission! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:37",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "ok ok, that's it for now!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:37",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I'll be back later with more missions... be ready!! 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:37",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Have an awesome day! 😎",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 09:37",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-05 17:01",
+    "message" : "Hi again!!\nI hope your day was awesome! 😎",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Well, it's not over yet...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I have another mission for you!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "yes, really exciting!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Right? 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "ok... here it goes.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "MISSION 2",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "When you are on your way home, I need you to get something for me...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Don't worry, it's easy...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:11",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "I have it!",
+    "answer" : "I have it!",
+    "message" : "Take the LRT, get off at the KLCC station and move towards home as usually. After you climb the stairs, entering Suria Mall, look to the left, there is this place called `Lysha Flora`. Ask about a delivery for you. 🙂\nOnly continue if you already picked it up! No cheating!! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:59",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Of course not!",
+    "answer" : "Of course not!",
+    "message" : "You are not cheating, are you?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:59",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok, I believe you! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:59",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So, now you can go get your dinner in ISETAN.\nBut no sweeties for today!! 😛",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 17:59",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "I'm home!",
+    "answer" : "I'm home!",
+    "message" : "As soon as you get home, let me know...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "It's done!",
+    "answer" : "It's done!",
+    "message" : "Awesome!! So you know what to do! TIP: Use what you got in the office in the morning! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Roses, because you like flowers.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "3, Because you like this number (remember my mind reading magic? 🎩)",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "White and Red, because they are your favourites.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope I could make you smile... 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:32",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No",
+    "action2" : "Yes",
+    "answer" : "Yes",
+    "message" : "Did you like it?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:33",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "I saw social engineering in action 😊 thank you, you made me happy today",
+    "message" : "How do you feel right now?",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-05 18:34",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Send it!",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/ps-project-1d56c.appspot.com/o/images%2F1496658918.39491.jpg?alt=media&token=f5337033-2acd-4ec7-b9be-5099296f5108",
+    "message" : "Awesome!! I'm curious!\nYour mission now is to send me a picture. 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:35",
+    "timeout" : 0,
+    "type" : "picture",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yay! Enjoy your dinner and the rest of your night!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:35",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Talk to you tomorrow! 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...Brazilian goodbye! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-05 18:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-06 09:03",
+    "message" : "Good morning!! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's a beautiful day, isn't it? 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope you enjoyed yesterday.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I sure did enjoy planning it. 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You told me more than once, that every day should/could be special.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Right? 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I think so too!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I'm here to make sure every single day is special for you.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Because you are special. 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Yes!!",
+    "answer" : "Yes!!",
+    "message" : "What do you say?\nReady for a special day?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Of course I have another mission for you...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "this one will be to sweeten your day 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Already know what it is?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "well... you will know soon enough. For now, all you have to do is go to office 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "yes, I know, office this week is not fun...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "because I'm not there... 😛",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Right!!",
+    "answer" : "Right!!",
+    "message" : "Right? 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "but it can be our secret...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "we are going to have fun anyways.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "we are going to smile anyways.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "we are going to be happy anyways. 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "классно!?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "ok... so the mission!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "I have it and I love it!",
+    "answer" : "I have it and I love it!",
+    "message" : "Once you get to your desk. Crouch and look under it! 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No 😕.",
+    "action2" : "Yes!! 😄",
+    "answer" : "Yes!! 😄",
+    "message" : "Do you really love it?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope you enjoy it! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Now I'll leave you focus on work! 😅",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Have an AWESOME day!! 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "and have fun at the meetings... 😛",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "(Best thing about not being here today.)",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "ok, ok. I'm out! 😅",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 09:36",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-06 18:03",
+    "message" : "I'm back!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes, I know. You missed me!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "I guess...",
+    "action2" : "Yes!! 🙂",
+    "answer" : "Yes!! 🙂",
+    "message" : "You did, right?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I knew it!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's a gift. And a curse. 😎",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So, what's the plan now?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Tell me, how's your day?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:03",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "great as usual 😊",
+    "message" : "tell me something interesting 😏",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ha! I shouldn't start with the questions...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I know, I forgot! Can't help it! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "As you said before, silence with someone you are comfortable with is not akward. 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "let's try it...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "... (smiling back at you) 😊 ...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes! I was very comfortable.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You were right!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:04",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "btw, you look stunning today! 😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 18:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Take the picture!",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/ps-project-1d56c.appspot.com/o/images%2F1496754556.01177.jpg?alt=media&token=b6c04bf3-9fbe-4f7e-a536-9725dd4a5fca",
+    "message" : "Picture, please! 🙂\nIt's a mission!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 0,
+    "type" : "picture",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "it's confirmed.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You look amazing!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...as always! ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok, I'll leave you here!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I mean, I'll get back to planning tomorrow...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Let's see what I can come up with! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Enjoy the rest of your evening!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "See you tomorrow!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "(leaving with a very nice Brazilian goodbye)",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-06 21:09",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-07 09:02",
+    "message" : "доброе утро!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "🙂",
+    "action2" : "😊",
+    "answer" : "😊",
+    "message" : "Как поживаете?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope this week is being fun for you! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "btw... did you notice the time I'm buzzing you?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's never even! 🤣",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I mean, never :00. 😛",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Just to tease you! 🙃",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Not yet..",
+    "action2" : "Yes!!!!",
+    "answer" : "Yes!!!!",
+    "message" : "Is it working?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "good! 😎",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok, so today's mission is...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "to smile",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "to laugh",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "to be happy 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "yes, that's it!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Nothing can bring you down.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Not today.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "because it's an amazing day!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "(even though I'm still not there!) 😁",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's all going to be AWESOME!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "RIGHT!! 🙂",
+    "answer" : "RIGHT!! 🙂",
+    "message" : "right?!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Awesome!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So go out there, and have an amazing day!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Ok!! 😎",
+    "answer" : "Ok!! 😎",
+    "message" : "Oh, and listen to\n`IF TODAY WAS YOUR LAST DAY!!! - NICKLEBACK`.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "✌🏻",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:07",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Not much.",
+    "action2" : "True! 🙂",
+    "answer" : "True! 🙂",
+    "date" : "2017-06-07 17:59",
+    "message" : "Hi! I bet you couldn't wait for this message to come!! ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 18:06",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes! I knew it!!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 18:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Kinda..",
+    "action2" : "Yes!",
+    "answer" : "Yes!",
+    "message" : "Happy 1 year anniversary in Mindvalley! 😊😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 18:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "In a month, will be mine...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:33",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And as for you, so much has happened...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:33",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "awesome opportunities...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:33",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "awesome experiences...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:33",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "meeting awesome people...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:34",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "meeting you... 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:34",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Kinda..",
+    "action2" : "Yes!",
+    "answer" : "Yes!",
+    "message" : "Did you have a happy day? 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:34",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "how come you even remember this fact? 😊",
+    "message" : "What was your favourite moment?",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "BTW, you were a really cute baby! ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I did look at the picture a few times today...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And felt happy every time! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It's been awesome talking to you today! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes, Awesome!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Your favourite word! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wish you an awesome night!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "have fun at the gym! 😛",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Tchau! (goodbye in portuguese)",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🤗",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-07 09:35",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-08 09:01",
+    "message" : "Bom dia!! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "How are you today?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope that this week has been good for you. 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And perhaps I had something to do with it… ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Right? ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I think you should treat yourself with something nice today…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:05",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "What about going to work a little bit later… 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "After 10…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Because, ISETAN cake place only opens at 10…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And before going to office, hmmm..",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Get something for after lunch 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Take a picture",
+    "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/ps-project-1d56c.appspot.com/o/images%2F1496885868.24352.jpg?alt=media&token=4e40acb9-d8fe-490b-b97e-f4255155d253",
+    "message" : "I’d love to see which one you choose! 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:37",
+    "timeout" : 0,
+    "type" : "picture",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "have to be early today..",
+    "message" : "Why did you pick this one?",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok, that’s interesting…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Wish you an amazing day!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Wish you a классно day! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "See, educated! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "😉",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 09:38",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-08 13:27",
+    "message" : "Hi hi!! ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Sorry, unusual time, I know!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I didn’t want to be predictable, so I came earlier!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But really fast, I’ll be gone soon, won’t bother you for long! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I was just, here,",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Watching the sun",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And this blue sky",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It got boring you know… ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes, it’s your app talking…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:27",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "I love to see unexpected cakes on my table 😊 I don't know if it's you or not today",
+    "message" : "Just wanted to know how was lunch. 🙂",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-08 13:30",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No",
+    "action2" : "Yes 😊",
+    "answer" : "Yes 😊",
+    "message" : "Was dessert good?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:30",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Ok then!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:30",
+    "timeout" : 2,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Hope you have fun during the rest of the day…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:30",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Bye bye 🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 13:30",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-08 18:59",
+    "message" : "I’m back! 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:17",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Not much",
+    "action2" : "yes!!!",
+    "answer" : "yes!!!",
+    "message" : "Is your day happy?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:17",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:17",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m missing you…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:17",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You did ask me about this app before…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:17",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I never gave you many details.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "On how it started, why and when I’m writing it all",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Maybe I am writing it live",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Maybe I wrote it so long ago",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Or maybe I developed the app to write in my behalf",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So I don’t have to do it",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Very!",
+    "answer" : "Very!",
+    "message" : "Smart, right? 🤓",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Well…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "What actually happened was.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I had this idea a couple of weeks ago",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "2 weekends before my trip",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I knew I was going to miss you during this time I was out",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And for some reason, ",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:18",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I did feel you were going to miss me too",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So, my idea was not to build an app",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But to build an amazing week for you...",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "While being in the other side of the world",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I hope it’s working…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "No",
+    "action2" : "Yes",
+    "answer" : "Yes",
+    "message" : "Is it?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Timing is something interesting…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Right now, this whole day I’ve been writing from the plane from Taipei to SF.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Talked to you an hour ago over WhatsApp",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Sending you some weird dessert pictures ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "That I bet you were really interested!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🙂",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I just realized…",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m talking too much today.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’ll continue tomorrow ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wish you a great end of day!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Keep smiling and being happy.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "That’s how I’m picturing you right now ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:19",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "доброй ночи! 🤗",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-08 20:20",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-09 09:05",
+    "message" : "Howdy!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Kinda",
+    "action2" : "Very",
+    "answer" : "Very",
+    "message" : "Did you sleep well? ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:05",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You look stunning!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Yes, I can tell.😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:05",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And no worry, no picture required 😅",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "...although I did enjoying seeing little Ириночка ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "🌹",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 1.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Hope this is bringing more joy to your days… 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m glad if it is!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Knowing that you are happy, do make me happy. 😊",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Not yet",
+    "action2" : "да!",
+    "answer" : "да!",
+    "message" : "Are you happy?",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 0,
+    "type" : "options",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:06",
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "answer" : "it's Friday! ура 😊",
+    "message" : "How are you feeling?",
+    "needAnswer" : true,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 0,
+    "type" : "input",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I want to wish you a beautiful day!",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And tell you I’ll be thinking about you.",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Whenever you feel bad, stressed, bored",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You can remember me telling you something funny",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You probably have a few good ones… ☺️",
+    "needAnswer" : false,
+    "read" : true,
+    "readAt" : "2017-06-09 09:09",
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-09 18:33",
+    "message" : "You must be wondering the whole week",
+    "needAnswer" : false,
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Why this app?",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Why now?",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Maybe there was a better time for it",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "With everything that’s been going on...",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But I felt like this should be the time",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And I told you before",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m usually right",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Just like you 😊",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Right?",
+    "needAnswer" : false,
+    "timeout" : 1,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I have things to tell you…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And I’ll do it today, but later, because right now you are probably still in the office...",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Or just left…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I'll buzz you a bit later. 😊",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Have a great time until then 😉",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "date" : "2017-06-09 21:58",
+    "message" : "Right now, I’m still in the airplane going to SF…",
+    "needAnswer" : false,
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But for you, it’s already been a whole week",
+    "needAnswer" : false,
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Since we said goodbye in front of your building...",
+    "needAnswer" : false,
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "However for me, it’s only been yesterday.",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "(Yes, I’m traveling through time… and you don’t believe on it yet? 😊)",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "After you told me you would miss me",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wanted to be strong",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "So I never said anything",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But I was feeling the same",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I walked away",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And looked back a few times",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And I saw you there",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "You stood there for a while",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I read you and understood.",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wanted to go back",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And hug you again",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I still don’t know why I didn’t",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But maybe wasn’t the time",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wanted for this week to happen before",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I wanted you to see",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "…how much you mean to me.",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I started talking about it yesterday.",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But never completed…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Got distracted with other stuff…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Sorry, I always have so much to tell…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Last time we went to Din Tai Fung, you told me I keep on asking personal questions…",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "That you don’t usually talk about even with friends that you have had for years",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Truth is that I’m interested in knowing everything about you. 😊",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Because time doesn’t mean anything to me.",
+    "needAnswer" : false,
+    "timeout" : 2.5,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "It’s like I know you for a long time…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Not sure how to explain it…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "As I told you before…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "First time I talked you, ",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I did see something special about you",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I was sure after we got closer…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And I realized that",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I don’t just like you...",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m in love with you. ",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’ve been for a while ☺️",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Not sure exactly when it started",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But it’s been growing every day more",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "For a lot of reasons",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "That I can explain",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "And cannot",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I can probably list them all",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Perhaps I will some day…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But for today, that’s what I wanted you to know. ",
+    "needAnswer" : false,
+    "timeout" : 3,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I fought against it for a while,",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "But then I realized there was no point…",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "action1" : "Ok",
+    "message" : "Listen to “Trying not to love you” - Nickleback",
+    "needAnswer" : false,
+    "timeout" : 0,
+    "type" : "action",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Sorry, I keep bringing the same band, but you said you liked it, so I used this one :)",
+    "needAnswer" : false,
+    "timeout" : 4,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "I’m going to leave with this for today.",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "добие ноче!",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }, {
+    "action" : "none",
+    "message" : "Sleep wel!! 😊",
+    "needAnswer" : false,
+    "timeout" : 2,
+    "type" : "message",
+    "waitTime" : 0
+  }]
+}

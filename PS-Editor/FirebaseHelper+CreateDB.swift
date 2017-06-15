@@ -852,57 +852,57 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "And perhaps I had something to do with it… ☺️",
                                 timeout:3))
-        messages.append(Message(type: .message,
-                                message: "These last month has been…",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "Crazy…",
-                                timeout:1))
-        messages.append(Message(type: .message,
-                                message: "Confusing…",
-                                timeout:1))
-        messages.append(Message(type: .message,
-                                message: "Sad…",
-                                timeout:1))
-        messages.append(Message(type: .message,
-                                message: "Happy. 😊",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "A lot has happened...",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "But there was one thing I realized every day more.",
-                                timeout:3))
-        messages.append(Message(type: .message,
-                                message: "Which is how I feel about you. ☺️",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "That you know already…",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "But probably you want me to spell it out.",
-                                timeout:3))
-        messages.append(Message(type: .message,
-                                message: "Because “feelings” don’t really make sense.",
-                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "These last month has been…",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "Crazy…",
+//                                timeout:1))
+//        messages.append(Message(type: .message,
+//                                message: "Confusing…",
+//                                timeout:1))
+//        messages.append(Message(type: .message,
+//                                message: "Sad…",
+//                                timeout:1))
+//        messages.append(Message(type: .message,
+//                                message: "Happy. 😊",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "A lot has happened...",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "But there was one thing I realized every day more.",
+//                                timeout:3))
+//        messages.append(Message(type: .message,
+//                                message: "Which is how I feel about you. ☺️",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "That you know already…",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "But probably you want me to spell it out.",
+//                                timeout:3))
+//        messages.append(Message(type: .message,
+//                                message: "Because “feelings” don’t really make sense.",
+//                                timeout:2))
         messages.append(Message(type: .message,
                                 message: "Right? ☺️",
                                 timeout:2))
-        messages.append(Message(type: .message,
-                                message: "well… ",
-                                timeout:1))
-        messages.append(Message(type: .message,
-                                message: "Actually, I’ll tell you later.",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "Don’t want to say it all at once.",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "What is the fun on that? 🙂",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "In the meanwhile…",
-                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "well… ",
+//                                timeout:1))
+//        messages.append(Message(type: .message,
+//                                message: "Actually, I’ll tell you later.",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "Don’t want to say it all at once.",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "What is the fun on that? 🙂",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "In the meanwhile…",
+//                                timeout:2))
         messages.append(Message(type: .message,
                                 message: "I think you should treat yourself with something nice today…",
                                 timeout:4))
@@ -1006,7 +1006,7 @@ extension FirebaseHelper {
                                 date: "2017-06-08 18:59",
                                 timeout:2))
         messages.append(Message(type: .options,
-                                message: "Missing me?",
+                                message: "Is your day happy?",
                                 action1: "Not much",
                                 action2: "yes!!!"))
         messages.append(Message(type: .message,
@@ -1101,7 +1101,7 @@ extension FirebaseHelper {
                                 message: "I just realized…",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "I’m talking to much today.",
+                                message: "I’m talking too much today.",
                                 timeout:2))
         messages.append(Message(type: .message,
                                 message: "I’ll continue tomorrow ☺️",
@@ -1116,8 +1116,8 @@ extension FirebaseHelper {
                                 message: "That’s how I’m picturing you right now ☺️",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "🤗",
-                                timeout:1))
+                                message: "доброй ночи! 🤗",
+                                timeout:3))
         
         //.........
         
@@ -1205,23 +1205,23 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "But I felt like this should be the time",
                                 timeout:2.5))
-        messages.append(Message(type: .message,
-                                message: "And I told you before",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "I’m usually right",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "Just like you 😊",
-                                timeout:2))
-        messages.append(Message(type: .message,
-                                message: "Right?",
-                                timeout:1))
+//        messages.append(Message(type: .message,
+//                                message: "And I told you before",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "I’m usually right",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "Just like you 😊",
+//                                timeout:2))
+//        messages.append(Message(type: .message,
+//                                message: "Right?",
+//                                timeout:1))
         messages.append(Message(type: .message,
                                 message: "I have things to tell you…",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "And I’ll do it today, but later, because right now you are probably still in the office...",
+                                message: "And I’ll tell you more later, because right now you are probably still in the office...",
                                 timeout:4))
         messages.append(Message(type: .message,
                                 message: "Or just left…",
@@ -1395,7 +1395,7 @@ extension FirebaseHelper {
                                 message: "I’m going to leave with this for today.",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "Good night!",
+                                message: "доброй ночи! Хорошй выходные!",
                                 timeout:2))
         messages.append(Message(type: .message,
                                 message: "Sleep wel!! 😊",
@@ -1403,19 +1403,19 @@ extension FirebaseHelper {
         
         //.........
         
-        // Day 6 / 1 - 2017-06-10 (Saturday)
+        // Day 6 / 1 - 2017-06-12 (Monday)
         
         messages.append(Message(type: .message,
                                 message: "Hi, hi! Good morning!! 🙂",
-                                date: "2017-06-10 09:02",
+                                date: "2017-06-12 09:02",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
                                 message: "Добруе утро!! 😊",
                                 timeout:2))
-        messages.append(Message(type: .message,
-                                message: "Как поживаете? (Очин хорошо!)",
-                                timeout:2))
+        messages.append(Message(type: .action,
+                                message: "Как поживаете?",
+                                action1: "Очин хорошо!"))
         messages.append(Message(type: .message,
                                 message: "Russian was always intriguing for me…",
                                 timeout:2))
@@ -1525,8 +1525,9 @@ extension FirebaseHelper {
         messages.append(Message(type: .message,
                                 message: "Maybe that too, a bit… 😊",
                                 timeout:2))
-        messages.append(Message(type: .action,
+        messages.append(Message(type: .options,
                                 message: "Is it working?",
+                                answer: "Yes",
                                 action1: "No",
                                 action2: "Yes"))
         messages.append(Message(type: .message,
@@ -1581,20 +1582,20 @@ extension FirebaseHelper {
                                 message: "But you see, it’s too much too tell 😊",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "Хорошие выходные!!",
-                                timeout:2))
+                                message: "Хорошый день!!\n(I remembered the masculine form, hope it's right 🙂)",
+                                timeout:4))
         
         //.........
         
-        // Day 7 / 1 - 2017-06-11 (Sunday)
+        // Day 7 / 1 - 2017-06-13 (Tuesday)
         
         messages.append(Message(type: .message,
                                 message: "Hello again!! 🙂",
-                                date: "2017-06-11 09:00",
+                                date: "2017-06-13 09:00",
                                 timeout: 2))
         
         messages.append(Message(type: .message,
-                                message: "Good morning!",
+                                message: "доброе утро!",
                                 timeout:2))
         messages.append(Message(type: .message,
                                 message: "It’s always awesome to see you! 😊",
@@ -1678,67 +1679,117 @@ extension FirebaseHelper {
                                 message: "Perhaps I’ll do them moving forward… 😊",
                                 timeout:2))
         messages.append(Message(type: .message,
-                                message: "For now, I wish you an awesome Sunday!",
+                                message: "For now, I wish you an awesome Tuesday!",
                                 timeout:2))
         messages.append(Message(type: .message,
                                 message: "Hope you enjoy your day! 😊",
                                 timeout:2))
         
-        //easy like sunday morning
+//        //easy like sunday morning
+//        
+//        //.........
+//        
+//        // Day 8 / 1 - 2017-06-12 (Monday)
+//        
+//        messages.append(Message(type: .message,
+//                                message: "",
+//                                date: "2017-06-12 09:01",
+//                                timeout: 2))
+//        
+//        //.........
+//        
+//        // Day 8 / 2 - 2017-06-12 (Monday)
+//        
+//        messages.append(Message(type: .message,
+//                                message: "",
+//                                date: "2017-06-12 18:03",
+//                                timeout: 2))
+//        
+//        //.........
+//        
+//        // Day 9 / 1 - 2017-06-13 (Tuesday)
+//        
+//        messages.append(Message(type: .message,
+//                                message: "",
+//                                date: "2017-06-13 09:01",
+//                                timeout: 2))
+//        
+//        //.........
+//        
+//        // Day 9 / 2 - 2017-06-13 (Tuesday)
+//        
+//        messages.append(Message(type: .message,
+//                                message: "",
+//                                date: "2017-06-13 18:03",
+//                                timeout: 2))
+        
         
         //.........
         
-        // Day 8 / 1 - 2017-06-12 (Monday)
+        // Day 11 / 1 - 2017-06-16 (Friday)
         
         messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-12 09:01",
+                                message: "Good morning! 😊",
+                                date: "2017-06-16 09:42",
                                 timeout: 2))
+        messages.append(Message(type: .message, message: "I hope you had a good night’s sleep. 😊", timeout: 2))
+        messages.append(Message(type: .message, message: "So, I’m still not sure what happened yesterday.", timeout: 3))
+        messages.append(Message(type: .message, message: "I noticed something was wrong, but wasn’t sure what.", timeout: 2))
+        messages.append(Message(type: .message, message: "Remember I told you men are stupid?", timeout: 2))
+        messages.append(Message(type: .message, message: "We are, for many reasons...", timeout: 2))
+        messages.append(Message(type: .message, message: "This is one of them…", timeout: 2))
+        messages.append(Message(type: .message, message: "Or maybe it’s only me.", timeout: 2))
+        messages.append(Message(type: .message, message: "I guess I didn’t express myself correctly.", timeout: 2))
+        messages.append(Message(type: .message, message: "English can be complex sometimes…", timeout: 2))
+        messages.append(Message(type: .message, message: "At this point you may know,", timeout: 2))
+        messages.append(Message(type: .message, message: "That everything I said earlier…", timeout: 2))
+        messages.append(Message(type: .message, message: "I meant it.", timeout: 2))
+        messages.append(Message(type: .message, message: "When I said I care a lot about you,", timeout: 3))
+        messages.append(Message(type: .message, message: "I meant I want to see you happy.  😊", timeout: 2))
+        messages.append(Message(type: .message, message: "I meant I want you to be safe.", timeout: 2))
+        messages.append(Message(type: .message, message: "When I said I’m in love with you.", timeout: 3))
+        messages.append(Message(type: .message, message: "I meant I’m in love with you.", timeout: 2))
+        messages.append(Message(type: .message, message: "I meant you are all I think about.", timeout: 2))
+        messages.append(Message(type: .message, message: "When you asked me what I understand about love.", timeout: 3))
+        messages.append(Message(type: .message, message: "I meant love can be several things.", timeout: 2))
+        messages.append(Message(type: .message, message: "But “in love” only means one thing to me.", timeout: 2))
+        messages.append(Message(type: .message, message: "And that’s how I feel about you.", timeout: 2))
+        messages.append(Message(type: .message, message: "I’m in love with you.", timeout: 3))
+        messages.append(Message(type: .message, message: "If I am hurting you,", timeout: 2))
+        messages.append(Message(type: .message, message: "I’m already doing what I don’t want to do.", timeout: 2))
+        messages.append(Message(type: .message, message: "Making you unhappy.", timeout: 2))
+        messages.append(Message(type: .message, message: "So I understand your reaction.", timeout: 2))
+        messages.append(Message(type: .message, message: "And will understand if none of it makes sense anymore.", timeout: 3))
+        messages.append(Message(type: .message, message: "But, I want you to know.", timeout: 2))
+        messages.append(Message(type: .message, message: "That I don’t give up that easily.", timeout: 2))
+        messages.append(Message(type: .message, message: "If I have to prove what I feel about you 100x", timeout: 3))
+        messages.append(Message(type: .message, message: "I will.", timeout: 2))
+        messages.append(Message(type: .message, message: "I will accept the challenge.", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you are special. 😊", timeout: 2))
+        messages.append(Message(type: .message, message: "When I say you are special.", timeout: 3))
+        messages.append(Message(type: .message, message: "I mean I've never met anybody like you.", timeout: 2))
+        messages.append(Message(type: .message, message: "I mean you are different.", timeout: 2))
+        messages.append(Message(type: .message, message: "(in a good way) 😊", timeout: 2))
+        messages.append(Message(type: .message, message: "I’m not just saying it to please you.", timeout: 2))
+        messages.append(Message(type: .message, message: "I’m saying it because that’s the truth.", timeout: 2))
+        messages.append(Message(type: .message, message: "I started listing what I see in you.", timeout: 2))
+        messages.append(Message(type: .message, message: "But never finished.", timeout: 2))
+        messages.append(Message(type: .message, message: "Here it is:", timeout: 2))
+        messages.append(Message(type: .message, message: "I’m in love with you…", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you are independent", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you are smart", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you are beautiful", timeout: 2))
+        messages.append(Message(type: .message, message: "Because of your smile", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you are too honest", timeout: 2))
+        messages.append(Message(type: .message, message: "Because of the way you laugh", timeout: 2))
+        messages.append(Message(type: .message, message: "Because of the way you pronounce my name", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you love sweets", timeout: 2))
+        messages.append(Message(type: .message, message: "Because I learn a lot with you", timeout: 2))
+        messages.append(Message(type: .message, message: "Because you don’t make things easy 😊", timeout: 2))
+        messages.append(Message(type: .message, message: "… ", timeout: 1))
+        messages.append(Message(type: .message, message: "P.S.", timeout: 3))
+        messages.append(Message(type: .message, message: "…", timeout: 3))
         
-        //.........
-        
-        // Day 8 / 2 - 2017-06-12 (Monday)
-        
-        messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-12 18:03",
-                                timeout: 2))
-        
-        //.........
-        
-        // Day 9 / 1 - 2017-06-13 (Tuesday)
-        
-        messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-13 09:01",
-                                timeout: 2))
-        
-        //.........
-        
-        // Day 9 / 2 - 2017-06-13 (Tuesday)
-        
-        messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-13 18:03",
-                                timeout: 2))
-        
-        //.........
-        
-        // Day 10 / 1 - 2017-06-14 (Wednesday)
-        
-        messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-14 09:01",
-                                timeout: 2))
-        
-        //.........
-        
-        // Day 10 / 2 - 2017-06-14 (Tuesday)
-        
-        messages.append(Message(type: .message,
-                                message: "",
-                                date: "2017-06-14 18:03",
-                                timeout: 2))
         
         //.........
         
