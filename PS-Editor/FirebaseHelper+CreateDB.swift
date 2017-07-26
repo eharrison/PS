@@ -1790,6 +1790,35 @@ extension FirebaseHelper {
         messages.append(Message(type: .message, message: "P.S.", timeout: 3))
         messages.append(Message(type: .message, message: "…", timeout: 3))
         
+        messages.append(Message(type: .message, message: "Before I go", timeout: 2))
+        messages.append(Message(type: .message,
+                                message: "I have a mission for you 😊",
+                                timeout: 2))
+        messages.append(Message(type: .action,
+                                message: "Are you up for it?",
+                                action1: "I'm ready 😊"))
+        messages.append(Message(type: .message,
+                                message: "I need you to find a book for me... at the bookshelf beside my desk. 😊",
+                                timeout: 4))
+        messages.append(Message(type: .message,
+                                message: "The book will be obvious as you know me and what I do. 😊",
+                                timeout: 4))
+        messages.append(Message(type: .message,
+                                message: "Hint: You are learning it 😊",
+                                timeout: 2))
+        messages.append(Message(type: .action,
+                                message: "There is something on the cover. Follow the instructions 😊\nLet me know once you reached your objective 😊",
+                                action1: "Finished!"))
+        messages.append(Message(type: .options,
+                                message: "Do you like it?",
+                                action1: "No",
+                                action2: "Yes 😊"))
+        messages.append(Message(type: .input,
+                                message: "How do you feel?",
+                                needAnswer: true))
+        messages.append(Message(type: .message,
+                                message: "I wish you a beatiful day! 😊",
+                                timeout: 2))
         
         //.........
         
